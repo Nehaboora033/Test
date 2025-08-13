@@ -11,20 +11,6 @@ export const Logo = () => (
 
 )
 
-export const Poland = () => (
-    <svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <rect x="0.5" y="0.5" width="33.6" height="21" fill="url(#pattern0_1_619)" />
-        <rect x="0.8" y="0.8" width="33" height="20.4" stroke="black" strokeOpacity="0.15" strokeWidth="0.6" />
-        <defs>
-            <pattern id="pattern0_1_619" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_1_619" transform="scale(0.00104167 0.00166667)" />
-            </pattern>
-            <image id="image0_1_619" width="960" height="600" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAJYAQMAAACXWh1CAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX////cFDzQkLT4AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+gGDRUTG7qO99cAAAC7SURBVHja7c0xDQAACAOw+TcNInYQktZAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAh+aIWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLBYXFs0sG5WRywNrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA2LTEzVDIxOjE5OjI2KzAwOjAwQxlaNQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNi0xM1QyMToxOToyNiswMDowMDJE4okAAAAASUVORK5CYII=" />
-        </defs>
-    </svg>
-
-)
-
 export const Money = () => (
     <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_1_277)">

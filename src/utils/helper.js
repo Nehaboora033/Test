@@ -1,5 +1,3 @@
-import  zoelogo from '../assets/png/Zoe LOGO.png'
-
 export const NavLinks = [
     {
         name: 'Strona Główna',
@@ -16,9 +14,5 @@ export const NavLinks = [
     {
         name: 'Moduły',
         link: 'moduty',
-    },
-    {
-        name: zoelogo,
-        link: 'zoe',
     },
 ]

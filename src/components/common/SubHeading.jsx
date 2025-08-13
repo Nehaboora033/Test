@@ -1,10 +1,9 @@
 import React from 'react'
 
-const SubHeading = ({ className='',Children }) => {
+const SubHeading = ({ className='',children }) => {
     return (
         <div className={`${className} font-bold text-[48px]`}>
-
-            {Children}
+           {children}
         </div>
     )
 }
