@@ -1,18 +1,24 @@
+import  zoelogo from '../assets/png/Zoe LOGO.png'
+
 export const NavLinks = [
     {
-        name: 'Home',
+        name: 'Strona Główna',
         link: '/',
     },
     {
-        name: 'Menu',
-        link: 'menu',
+        name: 'Dla kogo?',
+        link: 'dlakogo',
     },
     {
-        name: 'Offers',
-        link: 'offers',
+        name: 'Jak to działa?',
+        link: 'jak',
     },
     {
-        name: 'About Us',
-        link: 'about',
+        name: 'Moduły',
+        link: 'moduty',
+    },
+    {
+        name: zoelogo,
+        link: 'zoe',
     },
 ]

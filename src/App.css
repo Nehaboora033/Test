@@ -1,1 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 @import "tailwindcss";
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.cabin {
+    font-family: "Cabin", sans-serif;
+}
+
+@theme {
+    --shadow-purple: 0px 1px 15px 0px #5E13F687;
+    --shadow-red: 5px 7px 58.2px 0px #FF3B611A;
+    --shadow-black: 0px -4px 27px 0px #00000029;
+    --shadow-lightblack: 0px -3.01px 20.32px 0px #00000029;
+
+    --color-purple: #5E13F6;
+    --color-darkblue: #1B1E3C;
+    --color-textgrey: #4D4F4E;
+    --color-veil: #000302;
+    --color-bglightpurple: #F8F5FF;
+    --color-bgred: #FF3B61;
+    --color-bgpink: #FF4DF5;
+    --color-bgcyan: #00F0FF;
+    --color-lavender: #D5C7FF;
+}
+
+.red {
+    background-color: var(--color-bgred);
+}
+
+.pink {
+    background-color: var(--color-bgpink);
+}
+
+.cyan {
+    background-color: var(--color-bgcyan);
+}
+
+.lavender{
+    background-color: var(--color-lavender);
+}
+
+.purple {
+    background-color: var(--color-purple);
+}
+
+.purpleshadow {
+    box-shadow: var(--shadow-purple);
+}
+
+.redshadow {
+    box-shadow: var(--shadow-red);
+}
+
+.blackshadow {
+    box-shadow: var(--shadow-black);
+}
+
+.lightblack {
+    box-shadow: var(--shadow-lightblack);
+}
+
+.darkblue {
+    background-color: var(--color-darkblue);
+}
+
+.greytext {
+    color: var(--color-textgrey);
+}
+
+.veil {
+    color: var(--color-veil);
+}
+
+
+.bglightpurple {
+    background-color: var(--color-bglightpurple);
+}
