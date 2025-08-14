@@ -4,6 +4,8 @@ const Jak = () => {
   return (
     <div className='pt-[400px]'>
       Jak
+
+    
     </div>
   )
 }

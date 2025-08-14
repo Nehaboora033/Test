@@ -193,19 +193,18 @@ export const Warto_Data = [
 
 export const Jak_Data = [
     {
-        svg: Jaksvg1,
+        
         title: 'Skonfiguruj Swój Pakiet',
         description: 'Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.',
         alignment: 'text-right',
     },
     {
-        svg: Jaksvg2,
+       
         title: 'Uzyskaj Spersonalizowane Rekomendacje',
         description: 'Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.',
         alignment: 'text-left',
     },
     {
-        svg: Jaksvg3,
         title: 'Przetestuj lub Skontaktuj się z nami',
         description: 'Załóż konto, lub umów się na bezpłatną konsultację z naszym zespołem.',
         alignment: 'text-right',
