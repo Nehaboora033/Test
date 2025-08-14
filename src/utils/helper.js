@@ -1,4 +1,4 @@
-import { Ciebiesvg1, Ciebiesvg2, Ciebiesvg3, Ciebiesvg4, Ciebiesvg5, Ciebiesvg6, Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4, Wartosvg1, Wartosvg2, Wartosvg3, Wartosvg4, Wartosvg5 } from "./icons"
+import { Address, Ciebiesvg1, Ciebiesvg2, Ciebiesvg3, Ciebiesvg4, Ciebiesvg5, Ciebiesvg6, Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Email, Facebook, Insta, Jaksvg1, Jaksvg2, Jaksvg3, Linkedin, Phone, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4, Wartosvg1, Wartosvg2, Wartosvg3, Wartosvg4, Wartosvg5, Youtube } from "./icons"
 import img1 from '../assets/webp/img1.webp'
 import img2 from '../assets/webp/img2.webp'
 import img3 from '../assets/webp/img3.webp'
@@ -162,9 +162,6 @@ export const Warto_Box_Color = [
     "#1B1E3C",
 ]
 
-
-
-
 export const Warto_Data = [
     {
         svg: Wartosvg1,
@@ -190,5 +187,95 @@ export const Warto_Data = [
         svg: Wartosvg5,
         title: 'Łatwe Wdrożenie',
         description: 'Brak skomplikowanego procesu wdrażania — jest intuicyjny, nie wymaga szkolenia, a my pomagamy w migracji z innych narzędzi, takich jak SON.',
+    },
+]
+
+
+export const Jak_Data = [
+    {
+        svg: Jaksvg1,
+        title: 'Skonfiguruj Swój Pakiet',
+        description: 'Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.',
+        alignment: 'text-right',
+    },
+    {
+        svg: Jaksvg2,
+        title: 'Uzyskaj Spersonalizowane Rekomendacje',
+        description: 'Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.',
+        alignment: 'text-left',
+    },
+    {
+        svg: Jaksvg3,
+        title: 'Przetestuj lub Skontaktuj się z nami',
+        description: 'Załóż konto, lub umów się na bezpłatną konsultację z naszym zespołem.',
+        alignment: 'text-right',
+    },
+]
+
+
+export const Footer_Social_Links = [
+    {
+        svg: Facebook,
+        link: 'https://www.facebook.com/',
+    },
+    {
+        svg: Insta,
+        link: 'https://www.instagram.com/',
+    },
+    {
+        svg: Linkedin,
+        link: 'https://in.linkedin.com/',
+    },
+    {
+        svg: Youtube,
+        link: 'https://www.youtube.com/',
+    },
+]
+
+export const Footer_Links = [
+    {
+        title: 'Szybkie linki',
+        link: [
+            {
+                text: 'Strona Główna',
+                href: '/'
+            },
+            {
+                text: 'Dla kogo?',
+                href: 'dlakogo'
+            },
+            {
+                text: 'Jak to działa?',
+                href: 'jak'
+            },
+            {
+                text: 'Moduły',
+                href: 'moduty'
+            },
+            {
+                text: 'Zoe',
+                href: '/'
+            },
+        ],
+    },
+    {
+        title: 'Napisz do nas',
+        link: [
+            {
+                icon: Address,
+                text: 'ul. Nowy Świat 33/13, 00-029 Warszawa',
+                href: '',
+            },
+            {
+                icon: Phone,
+                text: '+48 519 519 190',
+                href: 'tel:+48519519190',
+            },
+            {
+                icon: Email,
+                text: 'info@renteasy.ai',
+                href: 'mailto:info@renteasy.ai',
+            },
+        ],
     },
 ]

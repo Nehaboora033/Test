@@ -9,7 +9,7 @@ import looking from '../assets/webp/lookingimg.webp'
 const Easyai = () => {
   return (
     <div className='max-w-[1164px] mx-auto px-3 mb-[140px]  '>
-      <div className='max-w-[1137px] rounded-2xl shadowblack py-[55px] pl-[56px] pr-[37px] '>
+      <div className='max-w-[1137px] rounded-2xl shadowblack py-[55px] pl-[56px] pr-[37px] border-[2px] border-[#F6F5F4] '>
         <div className='flex justify-between'>
           <div className='max-w-[471px] w-full relative'>
             <img src={looking} alt="img" className='absolute top-[-205px] left-0' />
