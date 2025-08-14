@@ -2,7 +2,9 @@ import React from 'react'
 
 const DlaKogo = () => {
   return (
-    <div>DlaKogo</div>
+    <div className='pt-[400px]'>
+      DlaKogo
+      </div>
   )
 }
 

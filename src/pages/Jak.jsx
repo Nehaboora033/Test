@@ -2,7 +2,9 @@ import React from 'react'
 
 const Jak = () => {
   return (
-    <div>Jak</div>
+    <div className='pt-[400px]'>
+      Jak
+    </div>
   )
 }
 
