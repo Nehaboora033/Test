@@ -1,4 +1,4 @@
-import { Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4 } from "./icons"
+import { Ciebiesvg1, Ciebiesvg2, Ciebiesvg3, Ciebiesvg4, Ciebiesvg5, Ciebiesvg6, Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4 } from "./icons"
 import img1 from '../assets/webp/img1.webp'
 import img2 from '../assets/webp/img2.webp'
 import img3 from '../assets/webp/img3.webp'
@@ -111,5 +111,48 @@ export const Dla_Card_Shadow = [
     "hover:shadow-[5px_7px_58.2px_0px_#FF4DF51A]",
     "hover:shadow-[5px_7px_58.2px_0px_#00F0FF1A]",
 ];
+
+export const CieBie_Box_Color = [
+    "#5E13F6",
+    "#FF3B61",
+    "#FF4DF5",
+    "#00F0FF",
+    "#D5C7FF",
+    "#1B1E3C",
+]
+
+export const Ciebie_Data = [
+    {
+        svg:Ciebiesvg1,
+        title: 'Zautomatyzuj windykację i rozliczenia',
+        description: 'Pozwól systemowi automatycznie obsługiwać przypomnienia, zawiadomienia prawne i eskalacje do partnerów prawnych.',
+    },
+    {
+        svg:Ciebiesvg2,
+        title: 'Zminimalizuj błędy ludzkie',
+        description: 'Zoe, Twoja inteligentna asystentka, śledzi terminy, dokumenty, płatności i interakcje z najemcami.',
+    },
+    {
+        svg:Ciebiesvg3,
+        title: 'Usprawnij swoje działania',
+        description: 'Od wystawiania ofert i rejestracji nowych klientów po realizację zamówień i fakturowanie — zarządzaj wszystkim z jednej platformy.',
+    },
+    {
+        svg:Ciebiesvg4,
+        title: 'Oszczędzaj swój czas',
+        description: 'Wbudowany menedżer zadań + panel samoobsługi najemcy = mniej połączeń, większa przejrzystość.',
+    },
+    {
+        svg:Ciebiesvg5,
+        title: 'Zyskaj przewagę konkurencyjną',
+        description: 'Ocena najemców, rezerwacje online, integracja inteligentnych zamków, faktury, e-sąd — wszystko w jednym miejscu.',
+    },
+    {
+        svg:Ciebiesvg6,
+        title: 'Łatwa skalowalność',
+        description: 'Dodaj więcej nieruchomości bez zatrudniania dodatkowych pracowników i bez wprowadzania chaosu. RentEasy.AI rozwija się razem z Tobą.',
+    },
+]
+
 
 

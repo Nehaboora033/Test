@@ -8,7 +8,7 @@ import { Dla_Box_Color, Dla_Box_Shadow, Dla_Card_Shadow } from '../utils/helper'
 
 const DlaKogo = () => {
   return (
-    <div className='max-w-[1164px] w-full mx-auto px-3'>
+    <div className='max-w-[1164px] w-full mx-auto px-3 mb-[290px]'>
       <div className='max-w-[1140px] '>
         <SubHeading className='text-center mb-[44px]'>Dla kogo?</SubHeading>
         <div className='border border-[#5E13F6] rounded-[73px] max-w-[452px] w-full mx-auto mb-[77px]'>
