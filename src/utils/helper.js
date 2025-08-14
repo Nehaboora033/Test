@@ -1,4 +1,4 @@
-import { Ciebiesvg1, Ciebiesvg2, Ciebiesvg3, Ciebiesvg4, Ciebiesvg5, Ciebiesvg6, Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4 } from "./icons"
+import { Ciebiesvg1, Ciebiesvg2, Ciebiesvg3, Ciebiesvg4, Ciebiesvg5, Ciebiesvg6, Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4, Wartosvg1, Wartosvg2, Wartosvg3, Wartosvg4, Wartosvg5 } from "./icons"
 import img1 from '../assets/webp/img1.webp'
 import img2 from '../assets/webp/img2.webp'
 import img3 from '../assets/webp/img3.webp'
@@ -123,36 +123,72 @@ export const CieBie_Box_Color = [
 
 export const Ciebie_Data = [
     {
-        svg:Ciebiesvg1,
+        svg: Ciebiesvg1,
         title: 'Zautomatyzuj windykację i rozliczenia',
         description: 'Pozwól systemowi automatycznie obsługiwać przypomnienia, zawiadomienia prawne i eskalacje do partnerów prawnych.',
     },
     {
-        svg:Ciebiesvg2,
+        svg: Ciebiesvg2,
         title: 'Zminimalizuj błędy ludzkie',
         description: 'Zoe, Twoja inteligentna asystentka, śledzi terminy, dokumenty, płatności i interakcje z najemcami.',
     },
     {
-        svg:Ciebiesvg3,
+        svg: Ciebiesvg3,
         title: 'Usprawnij swoje działania',
         description: 'Od wystawiania ofert i rejestracji nowych klientów po realizację zamówień i fakturowanie — zarządzaj wszystkim z jednej platformy.',
     },
     {
-        svg:Ciebiesvg4,
+        svg: Ciebiesvg4,
         title: 'Oszczędzaj swój czas',
         description: 'Wbudowany menedżer zadań + panel samoobsługi najemcy = mniej połączeń, większa przejrzystość.',
     },
     {
-        svg:Ciebiesvg5,
+        svg: Ciebiesvg5,
         title: 'Zyskaj przewagę konkurencyjną',
         description: 'Ocena najemców, rezerwacje online, integracja inteligentnych zamków, faktury, e-sąd — wszystko w jednym miejscu.',
     },
     {
-        svg:Ciebiesvg6,
+        svg: Ciebiesvg6,
         title: 'Łatwa skalowalność',
         description: 'Dodaj więcej nieruchomości bez zatrudniania dodatkowych pracowników i bez wprowadzania chaosu. RentEasy.AI rozwija się razem z Tobą.',
     },
 ]
 
+export const Warto_Box_Color = [
+    "#5E13F6",
+    "#FF3B61",
+    "#FF4DF5",
+    "#00F0FF",
+    "#1B1E3C",
+]
 
 
+
+
+export const Warto_Data = [
+    {
+        svg: Wartosvg1,
+        title: 'Przewaga Konkurencyjna',
+        description: 'Ponieważ nie jesteśmy tylko oprogramowaniem — jesteśmy Twoją przewagą konkurencyjną.',
+    },
+    {
+        svg: Wartosvg2,
+        title: 'Efektywność Kosztowa',
+        description: 'Zamiast zatrudniać trzech nowych pracowników, uruchamiasz RentEasy.AI. I to działa.',
+    },
+    {
+        svg: Wartosvg3,
+        title: 'Wgląd W Branżę',
+        description: 'Stworzyliśmy ten system we współpracy z prawdziwymi zarządcami nieruchomości — rozumiemy Twoją branżę, tempo pracy i formalności, z którymi się zmagasz.',
+    },
+    {
+        svg: Wartosvg4,
+        title: 'Aktywna Automatyzacja',
+        description: 'RentEasy.AI nie tylko przechowuje informacje — wykonuje pracę za Ciebie.',
+    },
+    {
+        svg: Wartosvg5,
+        title: 'Łatwe Wdrożenie',
+        description: 'Brak skomplikowanego procesu wdrażania — jest intuicyjny, nie wymaga szkolenia, a my pomagamy w migracji z innych narzędzi, takich jak SON.',
+    },
+]

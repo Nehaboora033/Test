@@ -9,10 +9,9 @@ import looking from '../assets/webp/lookingimg.webp'
 
 const Ciebiezrobic = () => {
   return (
-    <div className='max-w-[1164px] mx-auto px-3]'>
+    <div className='max-w-[1164px] mx-auto px-3 mb-[164px]'>
       <div className='max-w-[1140px] bglightpurple rounded-2xl px-[26px] py-[58px] relative'>
         <img src={looking} alt="img" className='absolute top-[-15.6%] left-[40%]'/>
-
         <SubHeading className='text-center mb-[40px]'>Co możemy dla Ciebie zrobić?</SubHeading>
         <div className='grid grid-cols-2 gap-[31px]'>
           {Ciebie_Data.map((item, index) => (
