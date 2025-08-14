@@ -12,9 +12,10 @@ body {
 
 @theme {
     --shadow-purple: 0px 1px 15px 0px #5E13F687;
-    --shadow-red: 5px 7px 58.2px 0px #FF3B611A;
     --shadow-black: 0px -4px 27px 0px #00000029;
     --shadow-lightblack: 0px -3.01px 20.32px 0px #00000029;
+    --shadow-inner: 4px 6px 4px 0px #00000040 inset;
+
 
     /* common page purple */
     --color-purple: #5E13F6;
@@ -66,12 +67,12 @@ body {
 }
 
 /* shadows */
+
+.shadowinner{
+    box-shadow: var(--shadow-inner);
+}
 .shadowpurple {
     box-shadow: var(--shadow-purple);
-}
-
-.shadowred {
-    box-shadow: var(--shadow-red);
 }
 
 .shadowblack {
@@ -80,4 +81,7 @@ body {
 
 .shadowlightblack {
     box-shadow: var(--shadow-lightblack);
+
 }
+
+
