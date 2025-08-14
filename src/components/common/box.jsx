@@ -1,11 +1,11 @@
 import React from 'react'
 
-const box = ({ className = '', Children }) => {
+const Box = ({ className = '', children }) => {
     return (
         <div className={`${className} flex items-center justify-center`}>
-            {Children}
+            {children}
         </div>
     )
 }
 
-export default box
+export default Box
