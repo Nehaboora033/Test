@@ -11,15 +11,18 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Heroswiper_Data } from '../utils/helper'
 import Box from './common/box'
 import dots from '../assets/webp/dots.webp'
+import Heading from './common/Heading';
 
 
 const Hero = () => {
   return (
-    <div className='max-w-[1390px] px-3 mx-auto mt-[26px]'>
+    <div className='max-w-[1390px] px-3 mx-auto '>
       <div className='max-w-[1366px] rounded-[30px]  px-4 pt-[77px] bglightpurple pb-[20px] mb-[298px] relative'>
-        <img src={dots } alt="dots" className='absolute right-[16px] top-[28px]' />
-        <div className='flex justify-center mb-[18px]'><Button className='border border-[#5E13F6] bg-[#E4D7FF] !text-[#5E13F6] py-[11px] px-[12px]'>Twój zespół cyfrowy dostępny 24/7.</Button></div>
-        <h1 className='text-[#1B1E3C] font-bold text-center text-[64px] max-w-[807px] w-full mx-auto mb-[15px]'>Zautomatyzuj zarządzanie nieruchomościami dzięki AI.</h1>
+        <img src={dots} alt="dots" className='absolute right-[16px] top-[28px]' />
+        <div className='flex justify-center mb-[18px]'>
+          <div className='border border-[#5E13F6] rounded-[30px] bg-[#E4D7FF] text-[#5E13F6] py-[11px] px-[16px]'>Twój zespół cyfrowy dostępny 24/7.</div>
+        </div>
+        <Heading className='text-center max-w-[807px] w-full mx-auto mb-[15px]'>Zautomatyzuj zarządzanie nieruchomościami dzięki AI.</Heading>
         <Description className={'text-[#474963] text-center max-w-[807px] w-full mx-auto mb-[15.5px]'}>Pierwszy w Polsce system CRM oparty na   sztucznej inteligencji, stworzony specjalnie dla firm zarządzających
           <div>nieruchomościami.</div>
           Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj działalność — bez zatrudniania dodatkowych pracowników.</Description>

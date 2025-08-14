@@ -4,14 +4,14 @@ import { NavLinks } from '../../utils/helper'
 import Description from '../common/Description'
 import Button from './Button'
 import flag from '../../assets/png/Poland.png'
-import logo from '../../assets/png/Logo.png'
+import logo from '../../assets/svg/logo.svg'
 import zoelogo from '../../assets/png/Zoe LOGO.png'
 
 
 const Header = () => {
   return (
     <>
-      <div className='max-w-[1164px] mx-auto px-3'>
+      <div className='max-w-[1164px] mx-auto px-3 pt-[28px] pb-[26px]'>
         <div className='max-w-[1140px] '>
           <div className='flex items-center justify-between'>
             <Link to={'/'}>
@@ -36,9 +36,9 @@ const Header = () => {
             <div className='flex gap-[15px] items-center'>
               <div className='flex  items-center gap-[15px]'>
                 <Description className={'text-[#1B1E3C]'}>Polski</Description>
-                <img src={flag} alt="img" />
+                <img src={flag} alt="img" className='cursor-pointer' />
               </div>
-              <Button className='py-[9px] px-[18px] text-white purple shadowpurple '>Zarejestruj</Button>
+              <Button className='py-[9px] px-[18px] text-white   '>Zarejestruj</Button>
             </div>
           </div>
         </div>

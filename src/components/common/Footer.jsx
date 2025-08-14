@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/png/footerlogo.png'
+import logo from '../../assets/svg/footerlogo.svg'
 import Description from './Description'
 import { Footer_Links, Footer_Social_Links } from '../../utils/helper'
 import { Link } from 'react-router-dom'
@@ -14,7 +14,7 @@ const Footer = () => {
       <div className='flex max-w-[970px] w-full mx-auto px-3 pb-[49px] justify-between'>
         {/* footer logo section */}
         <div className='max-w-[260px] w-full'>
-          <img src={logo} alt="logo" className='mb-[14px]' />
+          <img src={logo} alt="logo" className='mb-[14px] cursor-pointer' />
           <Description className={'text-[#D1D2D8] mb-4'}>Zbudowane przez profesjonalistów, dla profesjonalistów</Description>
           <div>
             <div className='flex gap-[16px]'>

@@ -5,8 +5,10 @@ import React from 'react'
 const Moduty = () => {
     return (
         <>
-            <ModułyHero />
-            <ModutyTabs />
+            <div className=''>
+                <ModułyHero />
+                <ModutyTabs />
+            </div>
         </>
     )
 }
