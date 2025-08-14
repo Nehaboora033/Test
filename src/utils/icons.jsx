@@ -241,4 +241,12 @@ export const Notes = () => (
 
 
 
+export const Arrow = ({ className }) => (
+    <svg
+        className={className}
+        width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.33464 6L14.668 6M14.668 6L9.66797 1M14.668 6L9.66797 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+
+)
 

@@ -63,7 +63,7 @@ const Footer = () => {
 
       {/* card  */}
       <div className='max-w-[1390px] px-3 mx-auto'>
-        <div className='max-w-[1366px] purple rounded-[15px] py-[60px] px-[182px] flex flex-col items-center absolute top-[-56%]
+        <div className='max-w-[1366px]  px-auto purple rounded-[15px] py-[60px] px-[182px] flex flex-col items-center absolute top-[-56%]
         '>
           <SubHeading className='text-white max-w-[1002px] w-full text-center mb-[51px]'>Zrób pierwszy krok w kierunku bezstresowego zarządzania nieruchomościami</SubHeading>
           <Button className='border border-white '>Zarejestruj się</Button>
