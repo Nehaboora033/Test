@@ -35,10 +35,10 @@ const Header = () => {
             </div>
             <div className='flex gap-[15px] items-center'>
               <div className='flex  items-center gap-[15px]'>
-                <Description className={'textdarkblue'}>Polski</Description>
+                <Description className={'text-[#1B1E3C]'}>Polski</Description>
                 <img src={flag} alt="img" />
               </div>
-              <Button className='py-[9px] px-[18px] text-white purple purpleshadow '>Zarejestruj</Button>
+              <Button className='py-[9px] px-[18px] text-white purple shadowpurple '>Zarejestruj</Button>
             </div>
           </div>
         </div>

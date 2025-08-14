@@ -16,20 +16,23 @@ body {
     --shadow-black: 0px -4px 27px 0px #00000029;
     --shadow-lightblack: 0px -3.01px 20.32px 0px #00000029;
 
-    --color-textgrey: #4D4F4E;
-
+    /* common page purple */
     --color-purple: #5E13F6;
+
+    /* text subheading and footer */
     --color-darkblue: #1B1E3C;
 
-    --color-veil: #000302;
-    --color-lavender: #D5C7FF;
-
+    /* bglightpurple components */
     --color-bglightpurple: #F8F5FF;
+
     --color-bgred: #FF3B61;
     --color-bgpink: #FF4DF5;
     --color-bgcyan: #00F0FF;
+    --color-bglavender: #D5C7FF;
 
 }
+
+/* backgroundcolor */
 
 .bgred {
     background-color: var(--color-bgred);
@@ -43,63 +46,38 @@ body {
     background-color: var(--color-bgcyan);
 }
 
-.lavender {
-    background-color: var(--color-lavender);
-}
-
-.purple {
-    background-color: var(--color-purple);
-}
-
-.purpleshadow {
-    box-shadow: var(--shadow-purple);
-}
-
-.redshadow {
-    box-shadow: var(--shadow-red);
-}
-
-.blackshadow {
-    box-shadow: var(--shadow-black);
-}
-
-.lightblack {
-    box-shadow: var(--shadow-lightblack);
-}
-
-.darkblue {
-    background-color: var(--color-darkblue);
-}
-
-.textdarkblue {
-    color: var(--color-darkblue);
-}
-
-.textgrey {
-    color: var(--color-textgrey);
-}
-
-.veil {
-    color: var(--color-veil);
-}
-
-
 .bglightpurple {
     background-color: var(--color-bglightpurple);
 }
 
-/* .nav-active {
-    position: relative;
-    color: #1B1E3C;
+.bglavender {
+    background-color: var(--color-lavender);
 }
 
-.nav-active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 100%;
-    height: 1px;
-    color: #1B1E3C;
 
-} */
+/* common */
+.purple {
+    background-color: var(--color-purple);
+}
+
+/* footer and subheading */
+.darkblue {
+    background-color: var(--color-darkblue);
+}
+
+/* shadows */
+.shadowpurple {
+    box-shadow: var(--shadow-purple);
+}
+
+.shadowred {
+    box-shadow: var(--shadow-red);
+}
+
+.shadowblack {
+    box-shadow: var(--shadow-black);
+}
+
+.shadowlightblack {
+    box-shadow: var(--shadow-lightblack);
+}
