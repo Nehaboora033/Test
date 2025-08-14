@@ -16,15 +16,15 @@ import Box from './common/box'
 const Hero = () => {
   return (
     <div className='max-w-[1390px] px-3 mx-auto mt-[26px]'>
-      <div className='max-w-[1366px] rounded-[30px]  px-4 pt-[77px] pb-[20px] mb-[298px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className='max-w-[1366px] rounded-[30px]  px-4 pt-[77px] bglightpurple pb-[20px] mb-[298px] bg-center bg-cover bg-no-repeat' s tyle={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className='flex justify-center mb-[18px]'><Button className='border border-[#5E13F6] bg-[#E4D7FF] !text-[#5E13F6] py-[11px] px-[12px]'>Twój zespół cyfrowy dostępny 24/7.</Button></div>
         <h1 className='text-[#1B1E3C] font-bold text-center text-[64px] max-w-[807px] w-full mx-auto mb-[15px]'>Zautomatyzuj zarządzanie nieruchomościami dzięki AI.</h1>
         <Description className={'text-[#474963] text-center max-w-[807px] w-full mx-auto mb-[15.5px]'}>Pierwszy w Polsce system CRM oparty na   sztucznej inteligencji, stworzony specjalnie dla firm zarządzających
           <div>nieruchomościami.</div>
           Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj działalność — bez zatrudniania dodatkowych pracowników.</Description>
         <div className='flex gap-[26px] justify-center mb-[53px]'>
-          <Button className='purple py-[12.5px] px-[29px] shadowpurple  '>Jesteśmy również na YouTube.</Button>
-          <Button className='purple py-[12.5px] px-[29px] shadowpurple '>Zobacz Zoe w akcji</Button>
+          <Button className='purple py-[12.5px] px-[29px] shadowpurple'>Jesteśmy również na YouTube.</Button>
+          <Button className='purple py-[12.5px] px-[29px] shadowpurple'>Zobacz Zoe w akcji</Button>
         </div>
         {/* swiper */}
         <Swiper
@@ -36,8 +36,8 @@ const Hero = () => {
             delay: 2000,
             disableOnInteraction: false,
           }}
-
-          className=''>
+          className='overflow-hidden'
+          >
           {Heroswiper_Data.map((item, index) => (
             <SwiperSlide key={index} >
               <div className='rounded-2xl h-[261px] cursor-pointer bg-white max-w-[231px] w-full overflow-hidden relative'>
