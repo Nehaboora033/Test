@@ -3,14 +3,11 @@ import logo from '../../assets/svg/footerlogo.svg'
 import Description from './Description'
 import { Footer_Links, Footer_Social_Links } from '../../utils/helper'
 import { Link } from 'react-router-dom'
-import SubHeading from './SubHeading'
-import Button from './Button'
-
 
 const Footer = () => {
   const currentYear = new Date();
   return (
-    <div className='darkblue pt-[172px] relative'>
+    <div className='darkblue pt-[169px] '>
       <div className='flex max-w-[970px] w-full mx-auto px-3 pb-[49px] justify-between'>
         {/* footer logo section */}
         <div className='max-w-[260px] w-full'>
@@ -24,7 +21,6 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-
           </div>
         </div>
         {/* links footer */}
@@ -60,16 +56,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* card  */}
-      <div className='max-w-[1390px] px-3 mx-auto'>
-        <div className='max-w-[1366px]  px-auto purple rounded-[15px] py-[60px] px-[182px] flex flex-col items-center absolute top-[-56%]
-        '>
-          <SubHeading className='text-white max-w-[1002px] w-full text-center mb-[51px]'>Zrób pierwszy krok w kierunku bezstresowego zarządzania nieruchomościami</SubHeading>
-          <Button className='border border-white '>Zarejestruj się</Button>
-        </div>
-      </div>
-
       <div className='border-t border-white pt-[16px] pb-[13px] text-[]'>
         <Description className={'text-[#D1D2D8] text-center'}>© {currentYear.getFullYear()} RentEasy.AI — All rights reserved.</Description>
       </div>

@@ -4,6 +4,7 @@ import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import ScrollToTop from './components/common/ScrollToTop'
 import BackToTop from './components/common/BackToTop'
+import FooterCard from './components/common/FooterCard'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Outlet />
       </div>
+      <FooterCard />
       <Footer />
       <BackToTop />
     </>

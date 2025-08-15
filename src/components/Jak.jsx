@@ -5,14 +5,10 @@ import looking from "../assets/webp/lookingimg.webp"
 import timeline1 from '../assets/png/timeline1.png'
 import timeline2 from '../assets/png/timeline2.png'
 import { Jaksvg1, Jaksvg2, Jaksvg3 } from '../utils/icons'
-import { Jak_Data } from '../utils/helper'
-import jakimg1 from '../assets/png/jakimg1.png'
-import jakimg2 from '../assets/png/jakimg2.png'
-import jakimg3 from '../assets/png/jakimg3.png'
 
 const Jak = () => {
   return (
-    <div className='max-w-[1164px] mx-auto px-3 pb-[450px]'>
+    <div className='max-w-[1164px] mx-auto px-3 pb-[111px]'>
       <div className='max-w-[1140px] rounded-2xl shadowblack py-[62px] px-[60px] relative border-[2px] border-[#F6F5F4]'>
         <img src={looking} alt="img" className='pointer-events-none absolute left-[40%] top-[-151px]' />
         <SubHeading className='text-center mb-[18px]'>Jak Zacząć?</SubHeading>

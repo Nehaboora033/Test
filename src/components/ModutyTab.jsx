@@ -21,28 +21,28 @@ const ModutyTab = () => {
     };
     return (
         <div className='max-w-[1164px] mx-auto px-3'>
-            <div className='max-w-[1140xpx] '>
+            <div className='max-w-[1140xpx] mb-[63px] '>
                 <div className='flex gap-[24px]' >
                     <Tabs selectedIndex={selectedTab} onSelect={handleTabChange}>
                         <div className="flex gap-[24px]">
                             {/* LEFT SIDE - Tabs */}
-                            <TabList className="!m-0 max-w-[267px] w-full flex flex-col gap-[13px]"> {/* Remove default react-tabs margins */}
-                                
-                                    {Moduty_Tabs_Data.map((item, index) => (
-                                        <Tab
-                                            key={index}
-                                            className="rounded-[12px] cursor-pointer shadowlightblack text-center text-[#1B1E3C] py-[14px] px-[15px] text-[20px] transition-colors duration-400 focus:outline-none focus:ring-0"
-                                            selectedClassName="purple text-white">
-                                            {item.name}
-                                        </Tab>
-                                    ))}
-                               
+                            <TabList className="!m-0 max-w-[267px] w-full flex flex-col gap-[13px]">
+
+                                {Moduty_Tabs_Data.map((item, index) => (
+                                    <Tab
+                                        key={index}
+                                        className="rounded-[12px] cursor-pointer shadowlightblack text-center text-[#1B1E3C] py-[14px] px-[15px] text-[20px] transition-colors duration-400 focus:outline-none focus:ring-0"
+                                        selectedClassName="purple text-white">
+                                        {item.name}
+                                    </Tab>
+                                ))}
+
                             </TabList>
 
                             {/* RIGHT SIDE - Tab Panels */}
                             <div className="flex-1">
                                 <TabPanel>
-                                    {/* First Tab Content */}
+                                    {/* First part */}
                                     <div className="max-w-[850px] w-full rounded-[12px] shadowlightblack py-[30px] px-[36px]">
                                         <SubHeading className="text-center mb-[11px] !text-[36px]">
                                             Moduł ofert z integracjami

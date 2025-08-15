@@ -1,10 +1,11 @@
 import React from 'react'
+import Dlaczegowarto from '../components/Dlaczegowarto'
 
 const DlaKogo = () => {
   return (
-    <div className='pt-[400px]'>
-      DlaKogo
-      </div>
+    <>
+      <Dlaczegowarto />
+    </>
   )
 }
 

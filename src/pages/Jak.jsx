@@ -1,11 +1,10 @@
 import React from 'react'
+import ModułyHero from '../components/ModułyHero'
 
 const Jak = () => {
   return (
-    <div className='pt-[400px]'>
-      Jak
-
-    
+    <div>
+      <ModułyHero />
     </div>
   )
 }

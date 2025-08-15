@@ -1,14 +1,13 @@
-import ModutyTabs from '../components/ModutyTabs'
+import ModutyTab from '../components/ModutyTab'
 import ModułyHero from '../components/ModułyHero'
 import React from 'react'
 
 const Moduty = () => {
     return (
         <>
-           
-                <ModułyHero />
-                <ModutyTabs />
-           
+            <ModułyHero />
+            <ModutyTab />
+
         </>
     )
 }
