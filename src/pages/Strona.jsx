@@ -5,16 +5,19 @@ import DlaKogo from '../components/DlaKogo'
 import Ciebiezrobic from '../components/Ciebiezrobic'
 import Dlaczegowarto from '../components/Dlaczegowarto'
 import Jak from '../components/Jak'
+import looking from '../assets/webp/lookingimg.webp'
 
 const Strona = () => {
     return (
         <>
-            {/* <Hero />
-            <Easyai />
+            {/* <Hero /> */}
+            {/* <Easyai /> */}
             <DlaKogo />
-            <Ciebiezrobic /> */}
+            <img src={looking} alt="img" className='mx-auto' />
+            <Ciebiezrobic />
             <Dlaczegowarto />
-            {/* <Jak /> */}
+            <img src={looking} alt="img" className='mx-auto' />
+            <Jak />
         </>
     )
 }
