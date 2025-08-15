@@ -3,6 +3,7 @@ import img1 from '../assets/webp/img1.webp'
 import img2 from '../assets/webp/img2.webp'
 import img3 from '../assets/webp/img3.webp'
 import img4 from '../assets/webp/img4.webp'
+import zoelogo from '../assets/png/Zoe LOGO.png'
 
 export const NavLinks = [
     {
@@ -21,6 +22,12 @@ export const NavLinks = [
         name: 'Moduły',
         link: 'moduty',
     },
+    {
+        withImage: true,
+        image: zoelogo,
+        link: '/',
+    },
+
 ]
 
 export const Heroswiper_Data = [
