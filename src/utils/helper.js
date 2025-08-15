@@ -1,4 +1,4 @@
-import { Address, Ciebiesvg1, Ciebiesvg2, Ciebiesvg3, Ciebiesvg4, Ciebiesvg5, Ciebiesvg6, Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Email, Facebook, Insta, Jaksvg1, Jaksvg2, Jaksvg3, Linkedin, Phone, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4, Wartosvg1, Wartosvg2, Wartosvg3, Wartosvg4, Wartosvg5, Youtube } from "./icons"
+import { Address, Ciebiesvg1, Ciebiesvg2, Ciebiesvg3, Ciebiesvg4, Ciebiesvg5, Ciebiesvg6, Dlasvg1, Dlasvg2, Dlasvg3, Dlasvg4, Email, Facebook, Insta, Jaksvg1, Jaksvg2, Jaksvg3, Linkedin, Modutydlasvg1, Modutydlasvg2, Modutydlasvg3, Modutydlasvg4, Phone, Swipersvg1, Swipersvg2, Swipersvg3, Swipersvg4, Wartosvg1, Wartosvg2, Wartosvg3, Wartosvg4, Wartosvg5, Youtube } from "./icons"
 import img1 from '../assets/webp/img1.webp'
 import img2 from '../assets/webp/img2.webp'
 import img3 from '../assets/webp/img3.webp'
@@ -193,13 +193,13 @@ export const Warto_Data = [
 
 export const Jak_Data = [
     {
-        
+
         title: 'Skonfiguruj Swój Pakiet',
         description: 'Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.',
         alignment: 'text-right',
     },
     {
-       
+
         title: 'Uzyskaj Spersonalizowane Rekomendacje',
         description: 'Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.',
         alignment: 'text-left',
@@ -278,3 +278,71 @@ export const Footer_Links = [
         ],
     },
 ]
+
+export const Moduty_Tabs_Data = [
+    {
+        name: 'Moduł ofert z integracjami',
+    },
+    {
+        name: 'Moduł podstawowy',
+
+    },
+    {
+        name: 'Moduł Integracji z Google Workspace',
+    },
+    {
+        name: 'Moduł Bramki SMS',
+    },
+    {
+        name: 'Moduł płatności + umowy + klamki',
+    },
+    {
+        name: 'Moduł Task Manager',
+    },
+
+]
+
+export const Moduty_Middle_Part_Data = [
+    {
+        description: "Możliwość Tworzenia | Publikowania Ogłoszeń Z Poziomu Systemu.",
+        bg: "#5E13F6",
+    },
+
+    {
+        description: "Własna Podstrona Ofertowa Z Brandingiem Klienta.",
+        bg: "#FF3B61",
+
+    },
+    {
+        description: "Zbieranie Rezerwacji I Danych Kontaktowych Online.",
+        bg: "#FF4DF5",
+    },
+
+    {
+        description: "Integracja Z Popularnymi Portalami Ogłoszeniowymi (Planowana).",
+        bg: "#1B1E3C",
+
+    },
+]
+
+
+export const Moduty_Last_Part_Data = [
+    {
+        svg: Modutydlasvg1,
+        description: 'Zwiększyć Kontrolę Nad Procesem Wynajmu',
+    },
+    {
+        svg: Modutydlasvg2,
+        description: 'Zminimalizować Czas Od Publikacji Do Podpisania Umowy',
+    },
+    {
+        svg: Modutydlasvg3,
+        description: 'Pozyskiwać Najemców Bez Pośredników',
+    },
+    {
+        svg: Modutydlasvg4,
+        description: 'Budować Markę Własną W Ramach Strony Ofertowej',
+    },
+]
+
+

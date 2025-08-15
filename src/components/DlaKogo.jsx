@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SubHeading from './common/SubHeading'
 import { Dla_Data } from '../utils/helper'
 import Box from './common/box'
@@ -7,12 +7,23 @@ import { Dla_Box_Color, Dla_Box_Shadow, Dla_Card_Shadow } from '../utils/helper'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
 
 const DlaKogo = () => {
+
+  const [tabIndex, setTabIndex] = useState(() => {
+    const savedIndex = localStorage.getItem('dlaKogoTab')
+    return savedIndex !== null ? Number(savedIndex) : 0
+  })
+
+  const handleTabChange = (index) => {
+    setTabIndex(index)
+    localStorage.setItem('dlaKogoTab', index)
+  }
+
   return (
     <div className='max-w-[1164px] w-full mx-auto px-3 mb-[290px]'>
       <div className='max-w-[1140px] '>
         <SubHeading className='text-center mb-[44px]'>Dla kogo?</SubHeading>
 
-        <Tabs>
+        <Tabs selectedIndex={tabIndex} onSelect={handleTabChange}>
           <div className='flex justify-center'>
             <TabList className="flex bg-white max-w-[452px] mb-[77px] w-full border border-[#5E13F6] rounded-full gap-1 justify-center items-center h-[73px]">
               <Tab
