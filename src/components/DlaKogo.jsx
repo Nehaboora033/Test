@@ -19,21 +19,21 @@ const DlaKogo = () => {
   }
 
   return (
-    <div className='max-w-[1164px] w-full mx-auto px-3 mb-[290px]'>
+    <div className='max-w-[1164px] w-full mx-auto px-3 mb-[140px]'>
       <div className='max-w-[1140px] '>
         <SubHeading className='text-center mb-[44px]'>Dla kogo?</SubHeading>
 
         <Tabs selectedIndex={tabIndex} onSelect={handleTabChange}>
-          <div className='flex justify-center'>
+          <div className='flex justify-center px-3'>
             <TabList className="flex bg-white max-w-[452px] mb-[77px] w-full border border-[#5E13F6] rounded-full gap-1 justify-center items-center h-[73px]">
               <Tab
-                className="sm:py-[21.5px] sm:pl-[58.8px] w-full py-[23px] max-w-[226px] px-9 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-[#1B1E3C] cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                className="sm:py-[21.5px] sm:pl-[58.8px] w-full py-[25px] max-w-[226px] px-6 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-[#1B1E3C] text-[14px] cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
                 selectedClassName="purple text-white shadow-sm shadowinner"
               >
                 Firm, Które...
               </Tab>
               <Tab
-                className="pl-4 sm:px-6 py-[23px] sm:py-[21.5px] w-full !pr-0 rounded-[73px] whitespace-nowrap sm:text-xl font-bold text-[#1B1E3C] cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                className="sm:px-6 pl-3 py-[25px] sm:py-[21.5px] w-full !pr-0 rounded-[73px] whitespace-nowrap text-[14px] sm:text-xl font-bold text-[#1B1E3C] cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
                 selectedClassName="purple text-white border border-purple-blue shadow-sm shadowinner"
               >
                 Właścicieli, Którzy...
@@ -42,11 +42,11 @@ const DlaKogo = () => {
           </div>
           {/* cards data */}
           <TabPanel>
-            <div className="flex gap-[45px]">
+            <div className="grid min-[900px]:grid-cols-4 min-[730px]:grid-cols-3 min-[500px]:grid-cols-2  gap-4 ">
               {Dla_Data.map((item, index) => (
                 <div
                   key={index}
-                  className={`group max-w-[251px] card w-full h-[258px] rounded-[15px] flex flex-col items-center p-[25px] cursor-pointer transition-all duration-300 ${Dla_Card_Shadow[index]}`}
+                  className={`group max-w-[251px] card w-full h-[258px] justify-center mx-auto rounded-[15px] flex flex-col items-center p-[25px] cursor-pointer transition-all duration-300 ${Dla_Card_Shadow[index]}`}
                 >
                   <Box
                     className={`size-[74px] rounded-2xl mb-[24px] flex items-center justify-center transition-all duration-300 ${Dla_Box_Shadow[index]}`}

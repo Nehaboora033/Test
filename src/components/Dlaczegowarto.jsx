@@ -8,7 +8,7 @@ import Description from './common/Description'
 
 const Dlaczegowarto = () => {
   return (
-    <div className='max-w-[1164px] mx-auto px-3 mb-[331px]'>
+    <div className='max-w-[1164px] mx-auto px-3 mb-[191px]'>
       <div className='max-w-[1140px] '>
         <div className='flex justify-between lg:flex-row flex-col lg:gap-4 gap-[40px]'>
           <div className='lg:max-w-[600px] w-full'>
