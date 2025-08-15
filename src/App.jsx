@@ -11,9 +11,9 @@ function App() {
     <>
       <ScrollToTop />
       <Header />
-      {/* <div>
+      <div>
         <Outlet />
-      </div> */}
+      </div>
       <FooterCard />
       <Footer />
       <BackToTop />

@@ -9,12 +9,12 @@ import Jak from '../components/Jak'
 const Strona = () => {
     return (
         <>
-            <Hero />
+            {/* <Hero />
             <Easyai />
             <DlaKogo />
-            <Ciebiezrobic />
+            <Ciebiezrobic /> */}
             <Dlaczegowarto />
-            <Jak />
+            {/* <Jak /> */}
         </>
     )
 }

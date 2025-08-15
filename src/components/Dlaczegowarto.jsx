@@ -10,9 +10,9 @@ const Dlaczegowarto = () => {
   return (
     <div className='max-w-[1164px] mx-auto px-3 mb-[331px]'>
       <div className='max-w-[1140px] '>
-        <div className='flex justify-between '>
-          <div className='max-w-[600px] w-full'>
-            <SubHeading className='mb-[37px]'>Dlaczego warto skorzystać z RentEasy.AI?</SubHeading>
+        <div className='flex justify-between lg:flex-row flex-col lg:gap-4 gap-[40px]'>
+          <div className='lg:max-w-[600px] w-full'>
+            <SubHeading className='mb-[37px] lg:text-start text-center'>Dlaczego warto skorzystać z RentEasy.AI?</SubHeading>
             {Warto_Data.map((item, index) => (
               <div className='mb-[16px] flex item-center gap-[25px]' key={index}>
                 <Box
@@ -28,8 +28,8 @@ const Dlaczegowarto = () => {
               </div>
             ))}
           </div>
-          <div className='max-w-[457px] w-full'>
-            <img src={img} alt="img" className='rounded-2xl object-cover' />
+          <div className='lg:max-w-[457px] w-full flex justify-center '>
+            <img src={img} alt="img" className='rounded-2xl object-cover '  />
           </div>
         </div>
       </div>
