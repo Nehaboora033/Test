@@ -26,7 +26,7 @@ const Header = () => {
             <div className='flex items-center gap-[32px]'>
               <nav
                 className={`flex item-center gap-[32px] capitalize
-                max-[1160px]:flex-col max-[1160px]:items-center z-[10] max-[1160px]:justify-center max-[1160px]:bg-[#E4D7FF] transition-[right] max-[1160px]:fixed max-[1160px]:top-0 duration-800 ease-in-out max-sm:w-full max-[1160px]:w-[75%] max-[1160px]:h-full
+                max-[1160px]:flex-col max-[1160px]:items-center z-[10] max-[1160px]:justify-center max-[1160px]:bg-white transition-[right] max-[1160px]:fixed max-[1160px]:top-0 duration-800 ease-in-out max-sm:w-full max-[1160px]:w-[75%] max-[1160px]:h-full
                 ${state === 'show' ? 'right-0' : 'max-[1160px]:right-[-100%]'}`}
               >
                 {NavLinks.map((item, index) => (
@@ -62,7 +62,7 @@ const Header = () => {
                 </div>
               </nav>
             </div>
-
+            
             {/* Desktop Polish flag & button */}
             <div className='flex gap-[15px]'>
               <div className='flex gap-[15px] items-center max-[550px]:hidden'>

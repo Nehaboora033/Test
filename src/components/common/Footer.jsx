@@ -8,13 +8,13 @@ const Footer = () => {
   const currentYear = new Date();
   return (
     <div className='darkblue pt-[169px] '>
-      <div className='flex max-w-[970px] w-full mx-auto px-3 pb-[49px] justify-between'>
+      <div className='flex max-w-[970px] w-full md:flex-row flex-col md:gap-0 gap-[49px] mx-auto px-3 pb-[49px] justify-between'>
         {/* footer logo section */}
-        <div className='max-w-[260px] w-full'>
-          <img src={logo} alt="logo" className='mb-[14px] cursor-pointer' />
-          <Description className={'text-[#D1D2D8] mb-4'}>Zbudowane przez profesjonalistów, dla profesjonalistów</Description>
-          <div>
-            <div className='flex gap-[16px]'>
+        <div className='md:max-w-[260px] w-full '>
+          <div className='flex min-[500px]:justify-start justify-center  '><img src={logo} alt="logo" className='mb-[14px] cursor-pointer' /></div>
+          <Description className={'text-[#D1D2D8] min-[500px]:text-start text-center mb-4'}>Zbudowane przez profesjonalistów, dla profesjonalistów</Description>
+          <div className=''>
+            <div className='flex gap-4 min-[500px]:justify-start justify-center'>
               {Footer_Social_Links.map((item, index) => (
                 <Link to={item.link} className='border hover:scale-115 transition-all duration-300 ease-in  border-white cursor-pointer size-[40px] flex items-center justify-center rounded-[30px]' key={index}>
                   <item.svg />
@@ -24,8 +24,8 @@ const Footer = () => {
           </div>
         </div>
         {/* links footer */}
-        <div className="max-w-[444px] w-full">
-          <div className="flex justify-between gap-8">
+        <div className=" md:max-w-[444px] w-full">
+          <div className="flex justify-between sm:gap-8 gap-4">
             {Footer_Links.map((item, index) => (
               <ul key={index} className="w-[195px]">
                 <li className="text-white font-semibold text-[16px] mb-[21px]">
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='border-t border-white pt-[16px] pb-[13px] text-[]'>
-        <Description className={'text-[#D1D2D8] text-center'}>© {currentYear.getFullYear()} RentEasy.AI — All rights reserved.</Description>
+        <Description className={'text-[#D1D2D8] text-center sm:text-[16px] text-[14px]'}>© {currentYear.getFullYear()} RentEasy.AI — All rights reserved.</Description>
       </div>
     </div>
   )
