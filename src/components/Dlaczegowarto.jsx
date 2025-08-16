@@ -2,7 +2,6 @@ import React from 'react'
 import img from '../assets/webp/aiimg.webp'
 import SubHeading from './common/SubHeading'
 import { Warto_Data, Warto_Box_Color } from '../utils/helper'
-import Box from '../components/common/Box'
 import Description from './common/Description'
 
 
@@ -15,12 +14,12 @@ const Dlaczegowarto = () => {
             <SubHeading className='mb-[37px] lg:text-start text-center'>Dlaczego warto skorzystać z RentEasy.AI?</SubHeading>
             {Warto_Data.map((item, index) => (
               <div className='mb-[16px] flex item-center gap-[25px]' key={index}>
-                <Box
-                  className={'size-[64px] rounded-2xl shrink-0 '}
+                <div
+                  className={'size-[64px] flex items-center justify-center rounded-2xl shrink-0 '}
                   style={{ backgroundColor: Warto_Box_Color[index] }}
                 >
                   <item.svg />
-                </Box>
+                </div>
                 <div>
                   <SubHeading className='!text-[20px] text-[#000302] '>{item.title} </SubHeading>
                   <Description className={'text-[#4D4F4E]'}>{item.description} </Description>

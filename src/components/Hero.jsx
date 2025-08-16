@@ -141,9 +141,9 @@ const Hero = () => {
                 )}
 
                 {activeIndex !== index && (
-                  <Box className="purple size-[54px] rounded-[50%] absolute top-[44%] left-1/2 -translate-x-1/2 z-10">
+                  <div className="purple flex items-center justify-center size-[54px] rounded-[50%] absolute top-[44%] left-1/2 -translate-x-1/2 z-10">
                     <item.svg />
-                  </Box>
+                  </div>
                 )}
 
 

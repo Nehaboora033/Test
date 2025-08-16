@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Dla_Box_Color, Dla_Box_Shadow, Dla_Card_Shadow, Moduty_Last_Part_Data, Moduty_Middle_Part_Data, Moduty_Tabs_Data } from '../utils/helper'
 import SubHeading from './common/SubHeading'
 import Description from './common/Description'
-import Box from '../components/common/Box'
 import { Notes } from '../utils/icons'
 import multicircle from '../assets/webp/multicircles.webp'
 import { TabList, Tabs, Tab, TabPanel } from 'react-tabs'
@@ -63,12 +62,12 @@ const ModutyTab = () => {
                                                 className="min-[1100px]:max-w-[249px] w-full flex flex-col items-center"
                                                 key={index}
                                             >
-                                                <Box
-                                                    className="size-[57px] rounded-[13px] mb-[14px]"
+                                                <div
+                                                    className="size-[57px] rounded-[13px] flex items-center justify-center mb-[14px]"
                                                     style={{ backgroundColor: item.bg }}
                                                 >
                                                     <Notes />
-                                                </Box>
+                                                </div>
                                                 <Description className="cabin text-center leading-[134%] text-[#5F6277]">
                                                     {item.description}
                                                 </Description>
@@ -94,12 +93,12 @@ const ModutyTab = () => {
                                                 className={`group min-[1100px]:max-w-[195px] w-full rounded-[10px] h-[188px] px-[5px] pt-[22px] flex flex-col items-center transition-all duration-300 cursor-pointer ${Dla_Card_Shadow[index]}`}
                                                 key={index}
                                             >
-                                                <Box
-                                                    className={`size-[53px] rounded-[12px] mb-[17.5px] transition-all duration-300 ${Dla_Box_Shadow[index]}`}
+                                                <div
+                                                    className={`size-[53px] flex items-center justify-center rounded-[12px] mb-[17.5px] transition-all duration-300 ${Dla_Box_Shadow[index]}`}
                                                     style={{ backgroundColor: Dla_Box_Color[index] }}
                                                 >
                                                     <item.svg />
-                                                </Box>
+                                                </div>
                                                 <Description className="text-[#4F4F4E] text-center !text-[11.6px]">
                                                     {item.description}
                                                 </Description>

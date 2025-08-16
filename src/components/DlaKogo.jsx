@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import SubHeading from './common/SubHeading'
 import { Dla_Data } from '../utils/helper'
-import Box from '../components/common/Box'
 import Description from './common/Description'
 import { Dla_Box_Color, Dla_Box_Shadow, Dla_Card_Shadow } from '../utils/helper'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
@@ -48,12 +47,12 @@ const DlaKogo = () => {
                   key={index}
                   className={`group max-w-[251px] card w-full h-[258px] justify-center mx-auto rounded-[15px] flex flex-col items-center p-[25px] cursor-pointer transition-all duration-300 ${Dla_Card_Shadow[index]}`}
                 >
-                  <Box
+                  <div
                     className={`size-[74px] rounded-2xl mb-[24px] flex items-center justify-center transition-all duration-300 ${Dla_Box_Shadow[index]}`}
                     style={{ backgroundColor: Dla_Box_Color[index] }}
                   >
                     <item.svg />
-                  </Box>
+                  </div>
                   <div className="max-w-[190px] w-full">
                     <h4 className="font-bold text-lg text-center text-[#020403] mb-[11px] whitespace-nowrap">
                       {item.title}

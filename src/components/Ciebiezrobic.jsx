@@ -1,7 +1,6 @@
 import React from 'react'
 import SubHeading from './common/SubHeading'
 import { Ciebie_Data, CieBie_Box_Color } from '../utils/helper'
-import Box from '../components/common/Box'
 import Description from './common/Description'
 
 
@@ -14,12 +13,12 @@ const Ciebiezrobic = () => {
         <div className='grid min-[600px]:grid-cols-2 grid-cols-1 md:gap-[31px] gap-[20px]'>
           {Ciebie_Data.map((item, index) => (
             <div className='flex items-center flex-col min-[600px]:bg-white rounded-[15px] md:p-[22px] p-4 ' key={index}>
-              <Box
-                className={`size-[64px] rounded-2xl mb-[16px]`}
+              <div
+                className={`size-[64px] flex items-center justify-center rounded-2xl mb-[16px]`}
                 style={{ backgroundColor: CieBie_Box_Color[index] }}
               >
                 <item.svg />
-              </Box>
+              </div>
               <SubHeading className='!text-[20px] text-center mb-[6px] text-[#000302]'>{item.title} </SubHeading>
               <Description className={'text-[#4D4F4E] cabin text-center max-w-[450px] w-full'} >{item.description} </Description>
             </div>
