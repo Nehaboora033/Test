@@ -9,7 +9,6 @@ import 'swiper/css/autoplay';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Heroswiper_Data } from '../utils/helper'
-import Box from './common/box'
 import dots from '../assets/webp/dots.webp'
 import Heading from './common/Heading';
 import { Typewriter } from "react-simple-typewriter";
@@ -65,8 +64,8 @@ const Hero = () => {
           <div>nieruchomościami.</div>
           Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj działalność — bez zatrudniania dodatkowych pracowników.</Description>
         <div className='flex gap-[26px] justify-center mb-[53px] sm:flex-row flex-col items-center'>
-          <Button className='purple py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Jesteśmy również na YouTube.</Button>
-          <Button className='purple py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Zobacz Zoe w akcji</Button>
+          <Button className=' py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Jesteśmy również na YouTube.</Button>
+          <Button className=' py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Zobacz Zoe w akcji</Button>
         </div>
 
 
@@ -79,10 +78,10 @@ const Hero = () => {
           pagination={{
             clickable: false,
           }}
-          a utoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           breakpoints={{
             320: {
@@ -145,8 +144,6 @@ const Hero = () => {
                     <item.svg />
                   </div>
                 )}
-
-
               </div>
             </SwiperSlide>
           ))}

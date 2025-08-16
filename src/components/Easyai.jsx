@@ -17,7 +17,7 @@ const Easyai = () => {
             <SubHeading className=' lg:max-w-[437px] w-full leading-[120%] mb-[14px] !text-[20px] text-center lg:text-start'>Jesteśmy Twoim zespołem ds. operacji cyfrowych, pracującym dla Ciebie 24/7.</SubHeading>
             <Description className={'text-[#494B63] lg:text-start text-center'}>RentEasy.AI to pierwszy w Polsce system CRM stworzony od podstaw specjalnie dla firm zarządzających nieruchomościami. Automatyzujemy codzienne operacje, ograniczamy chaos i pomagamy rozwijać działalność bez konieczności zatrudniania dodatkowych pracowników. </Description>
             <Description className={'mt-3 text-[#494B63] mb-[35px] lg:text-start text-center'}>Nie jesteśmy kolejnym ładnym panelem do ewidencji mieszkań. Jesteśmy cyfrowym zespołem operacyjnym, który pracuje dla Ciebie 24/7.</Description>
-            <div className='max-lg:flex justify-center'><Button className={'purple shadowpurple  max-sm:w-[225px]'}>Sprawdź nas!</Button></div>
+            <div className='max-lg:flex justify-center'><Button className={' shadowpurple  max-sm:w-[225px]'}>Sprawdź nas!</Button></div>
           </div>
           <div className='lg:max-w-[515px] w-full flex justify-center '>
             <img src={img} alt="img" className='rounded-[15px] object-cover overflow-hidden block ' />
