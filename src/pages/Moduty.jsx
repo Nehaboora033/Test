@@ -6,7 +6,7 @@ const Moduty = () => {
     return (
         <>
             <ModułyHero />
-            <ModutyTab />
+            {/* <ModutyTab /> */}
 
         </>
     )
