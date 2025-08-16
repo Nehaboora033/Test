@@ -5,7 +5,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Jak from '../pages/Jak'
 import Moduty from '../pages/Moduty'
 import DlaKogo from '../pages/DlaKogo'
-import Strona from '../pages/strona'
+import Strona from '../pages/Strona'
 
 const AppRoutes = createBrowserRouter([
   {
