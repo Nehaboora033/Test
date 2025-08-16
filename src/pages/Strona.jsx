@@ -10,8 +10,9 @@ import looking from '../assets/webp/lookingimg.webp'
 const Strona = () => {
     return (
         <>
-            {/* <Hero /> */}
-            {/* <Easyai /> */}
+            <Hero />
+            <img src={looking} alt="img" className='max-sm:mx-auto max-sm:block hidden' />
+            <Easyai />
             <DlaKogo />
             <img src={looking} alt="img" className='mx-auto' />
             <Ciebiezrobic />
