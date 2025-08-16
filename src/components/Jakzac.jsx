@@ -5,7 +5,7 @@ import { Jaksvg1, Jaksvg2, Jaksvg3 } from '../utils/icons'
 import timeline1 from '../assets/png/timeline1.png'
 import timeline2 from '../assets/png/timeline2.png'
 import { Jak_Data } from '../utils/helper'
-import Box from '../components/common/Box'
+
 
 
 const Jakzac = () => {
@@ -74,9 +74,9 @@ const Jakzac = () => {
                     <div className='grid  md:grid-cols-2 min-[910px]:flex  gap-6'>
                         {Jak_Data.map((item, index) => (
                             <div className='' key={index}>
-                                <Box className='rounded-[50%] mx-auto purple sm:size-[75px] size-[54px] mb-4'>
+                                <div className='rounded-[50%] flex items-center justify-center mx-auto purple sm:size-[75px] size-[54px] mb-4'>
                                     <item.svg className={'max-sm:size-[30px]'}/>
-                                </Box>
+                                </div>
                                 <SubHeading className='sm:!text-[20px] !text-[16px] text-center mb-4'>{item.title} </SubHeading>
                                 <Description className={'text-center'}>{item.description} </Description>
                             </div>
