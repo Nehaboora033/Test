@@ -200,21 +200,20 @@ export const Warto_Data = [
 
 export const Jak_Data = [
     {
-
         title: 'Skonfiguruj Swój Pakiet',
         description: 'Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.',
-        alignment: 'text-right',
+        svg:Jaksvg1,
     },
     {
 
         title: 'Uzyskaj Spersonalizowane Rekomendacje',
         description: 'Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.',
-        alignment: 'text-left',
+        svg:Jaksvg2,
     },
     {
         title: 'Przetestuj lub Skontaktuj się z nami',
         description: 'Załóż konto, lub umów się na bezpłatną konsultację z naszym zespołem.',
-        alignment: 'text-right',
+        svg:Jaksvg3,
     },
 ]
 
@@ -351,5 +350,4 @@ export const Moduty_Last_Part_Data = [
         description: 'Budować Markę Własną W Ramach Strony Ofertowej',
     },
 ]
-
 

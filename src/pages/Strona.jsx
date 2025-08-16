@@ -4,8 +4,8 @@ import Hero from '../components/Hero'
 import DlaKogo from '../components/DlaKogo'
 import Ciebiezrobic from '../components/Ciebiezrobic'
 import Dlaczegowarto from '../components/Dlaczegowarto'
-import Jak from '../components/Jak'
 import looking from '../assets/webp/lookingimg.webp'
+import Jakzac from '../components/Jakzac'
 
 const Strona = () => {
     return (
@@ -18,7 +18,7 @@ const Strona = () => {
             <Ciebiezrobic />
             <Dlaczegowarto />
             <img src={looking} alt="img" className='mx-auto' />
-            <Jak />
+            <Jakzac />
         </>
     )
 }
