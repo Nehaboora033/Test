@@ -1,7 +1,7 @@
 import React from 'react'
 import SubHeading from './common/SubHeading'
 import { Ciebie_Data, CieBie_Box_Color } from '../utils/helper'
-import Box from './common/box'
+import Box from '../components/common/Box'
 import Description from './common/Description'
 
 

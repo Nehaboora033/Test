@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../assets/webp/aiimg.webp'
 import SubHeading from './common/SubHeading'
 import { Warto_Data, Warto_Box_Color } from '../utils/helper'
-import Box from './common/box'
+import Box from '../components/common/Box'
 import Description from './common/Description'
 
 

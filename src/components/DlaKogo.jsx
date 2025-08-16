@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SubHeading from './common/SubHeading'
 import { Dla_Data } from '../utils/helper'
-import Box from './common/box'
+import Box from '../components/common/Box'
 import Description from './common/Description'
 import { Dla_Box_Color, Dla_Box_Shadow, Dla_Card_Shadow } from '../utils/helper'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
