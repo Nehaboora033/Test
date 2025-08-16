@@ -1,6 +1,7 @@
+
+import React from 'react'
 import ModutyTab from '../components/ModutyTab'
 import ModułyHero from '../components/ModułyHero'
-import React from 'react'
 
 const Moduty = () => {
     return (
