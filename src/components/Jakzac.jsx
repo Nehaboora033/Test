@@ -5,7 +5,7 @@ import { Jaksvg1, Jaksvg2, Jaksvg3 } from '../utils/icons'
 import timeline1 from '../assets/png/timeline1.png'
 import timeline2 from '../assets/png/timeline2.png'
 import { Jak_Data } from '../utils/helper'
-import Box from './common/Box'
+import Box from '../components/common/Box'
 
 
 const Jakzac = () => {
