@@ -3,7 +3,6 @@ import dots from '../assets/webp/dots.webp'
 import Heading from './common/Heading'
 import circles from '../assets/webp/circles.webp'
 
-
 const ModułyHero = () => {
   return (
     <div className='max-w-[1390px] px-3 mx-auto'>

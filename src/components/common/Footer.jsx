@@ -16,7 +16,7 @@ const Footer = () => {
           <div className=''>
             <div className='flex gap-4 min-[500px]:justify-start justify-center'>
               {Footer_Social_Links.map((item, index) => (
-                <Link to={item.link} className='border hover:scale-115 transition-all duration-300 ease-in  border-white cursor-pointer size-[40px] flex items-center justify-center rounded-[30px]' key={index}>
+                <Link to={item.link} className='border hover:scale-115 transition-all duration-150 ease-in  border-white cursor-pointer size-[40px] flex items-center justify-center rounded-[30px]' key={index}>
                   <item.svg />
                 </Link>
               ))}
@@ -32,7 +32,7 @@ const Footer = () => {
                   {item.title}
                 </li>
                 {item.link.map((linkItem, i) => (
-                  <li key={i} className="flex items-start gap-3 mb-[16px]">
+                  <li key={i} className="flex items-start sm:gap-3 gap-2 mb-[16px]">
 
                     {linkItem.icon && (
                       <span className="w-6 h-6 flex-none">
@@ -41,11 +41,7 @@ const Footer = () => {
                     )}
                     <Link
                       to={linkItem.href}
-                      className="relative text-gray-300 hover:text-white text-base 
-             after:content-[''] after:absolute after:left-0 after:bottom-[-2px] 
-             after:h-[2px] after:w-0 after:bg-white 
-             after:transition-all after:duration-500 
-             hover:after:w-full"
+                      className="text-gray-300 hover:text-white text-base transition-colors duration-100 ease-linear"
                     >
                       {linkItem.text}
                     </Link>

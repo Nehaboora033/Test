@@ -245,8 +245,6 @@ export const Notes = () => (
 
 )
 
-
-
 export const Arrow = ({ className }) => (
     <svg
         className={className}

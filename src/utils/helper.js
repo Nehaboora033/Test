@@ -202,18 +202,18 @@ export const Jak_Data = [
     {
         title: 'Skonfiguruj Swój Pakiet',
         description: 'Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.',
-        svg:Jaksvg1,
+        svg: Jaksvg1,
     },
     {
 
         title: 'Uzyskaj Spersonalizowane Rekomendacje',
         description: 'Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.',
-        svg:Jaksvg2,
+        svg: Jaksvg2,
     },
     {
         title: 'Przetestuj lub Skontaktuj się z nami',
         description: 'Załóż konto, lub umów się na bezpłatną konsultację z naszym zespołem.',
-        svg:Jaksvg3,
+        svg: Jaksvg3,
     },
 ]
 

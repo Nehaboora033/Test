@@ -22,21 +22,19 @@ const ModutyTab = () => {
         <div className='max-w-[1164px] mx-auto px-3'>
             <div className='max-w-[1140xpx] mb-[63px] '>
                 <Tabs selectedIndex={selectedTab} onSelect={handleTabChange}>
-                    <div className="flex gap-[24px] min-[1100px]:flex-row flex-col">
+                    <div className="flex min-[1100px]:gap-[24px] gap-[64px] min-[1100px]:flex-row flex-col">
                         {/* LEFT SIDE - Tabs */}
-                        <TabList className="!m-0 min-[1100px]:max-w-[267px] w-full  min-[1100px]:flex flex-col gap-[13px] grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+                        <TabList className="!m-0 min-[1100px]:max-w-[267px] w-full  min-[1100px]:flex flex-col gap-[13px] grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
 
                             {Moduty_Tabs_Data.map((item, index) => (
                                 <Tab
                                     key={index}
-                                    className="rounded-[12px] flex items-center justify-center cursor-pointer shadowlightblack text-center text-[#1B1E3C] py-[14px] px-[15px] text-[20px] transition-colors duration-400 focus:outline-none focus:ring-0"
+                                    className="rounded-[12px] flex items-center justify-center cursor-pointer shadowlightblack text-center text-[#1B1E3C] py-[14px] px-[15px] text-[20px] transition-colors duration-250 focus:outline-none focus:ring-0 hover:bg-[#F8F5FF] "
                                     selectedClassName="purple text-white">
                                     {item.name}
                                 </Tab>
                             ))}
-
                         </TabList>
-
                         {/* RIGHT SIDE - Tab Panels */}
                         <div className="f lex-1 ">
                             <TabPanel>

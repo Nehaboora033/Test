@@ -8,7 +8,6 @@ const Moduty = () => {
         <>
             <ModułyHero />
             <ModutyTab />
-
         </>
     )
 }

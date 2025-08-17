@@ -15,12 +15,8 @@ import { Typewriter } from "react-simple-typewriter";
 import swipercircle from '../assets/webp/swipercircle.webp'
 import logo from '../assets/svg/swiperLogo.svg'
 
-
-
 const useMediaQuery = (query) => {
   const [matches, setMatches] = React.useState(false)
-
-
   React.useEffect(() => {
     const media = window.matchMedia(query)
     if (media.matches !== matches) {
@@ -38,8 +34,8 @@ const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (
-    <div className='max-w-[1390px] px-3 mx-auto '>
-      <div className='max-w-[1366px] rounded-[30px] px-2  sm:px-4 pt-[77px] bglightpurple pb-[20px] sm:mb-[298px] mb-[140px] relative'>
+    <div className='max-w-[1390px] px-3 mx-auto  pt-[110px]'>
+      <div className='max-w-[1366px] rounded-[30px] px-2  sm:px-4 pt-[77px] bglightpurple pb-[20px] sm:mb-[279px] mb-[140px] relative'>
         <img src={dots} alt="dots" className='absolute right-[16px] top-[28px] min-[1050px]:block hidden' />
         <div className='flex justify-center mb-[18px]'>
           <div className='border border-[#5E13F6] rounded-[30px] bg-[#E4D7FF] text-[#5E13F6] py-[11px] px-[16px] sm:text-[16px] text-[14px]'>Twój zespół cyfrowy dostępny 24/7.</div>
@@ -65,10 +61,8 @@ const Hero = () => {
           Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj działalność — bez zatrudniania dodatkowych pracowników.</Description>
         <div className='flex gap-[26px] justify-center mb-[53px] sm:flex-row flex-col items-center'>
           <Button className=' py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Jesteśmy również na YouTube.</Button>
-          <Button className=' py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Zobacz Zoe w akcji</Button>
+          <Button className='py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Zobacz Zoe w akcji</Button>
         </div>
-
-
         {/* swiper */}
         <Swiper
           slidesPerView={5}
@@ -78,10 +72,10 @@ const Hero = () => {
           pagination={{
             clickable: false,
           }}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          a utoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           breakpoints={{
             320: {

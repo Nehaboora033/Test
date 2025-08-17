@@ -6,15 +6,12 @@ import timeline1 from '../assets/png/timeline1.png'
 import timeline2 from '../assets/png/timeline2.png'
 import { Jak_Data } from '../utils/helper'
 
-
-
 const Jakzac = () => {
     return (
-        <div className='max-w-[1164px] mx-auto px-3 pb-[111px]'>
-            <div className='max-w-[1140px] rounded-2xl shadowblack py-[62px] sm:px-[60px] p-[40px] border-[2px]  border-[#F6F5F4]  h- [620px]'>
+        <div className='max-w-[1164px] mx-auto px-3 sm:pb-[111px]'>
+            <div className='max-w-[1140px] rounded-2xl shadowblack sm:py-[62px] sm:px-[60px] pt-[25px] pb-[50px] px-[40px] border-[2px]  border-[#F6F5F4]  h- [620px]'>
                 <SubHeading className='text-center mb-[18px]'>Jak Zacząć?</SubHeading>
                 <Description className={'text-[#4D4F4E] max-w-[450px] w-full text-center mx-auto mb-[40px] sm:mb-[69px]'}>Chcesz uprościć zarządzanie swoją nieruchomością? Wykonaj trzy proste kroki:</Description>
-
                 <div className='lg:block hidden'>
                     {/* timeline shown after lg */}
                     <div
@@ -83,8 +80,6 @@ const Jakzac = () => {
                         ))}
                     </div>
                 </div>
-
-
             </div>
         </div>
     )
