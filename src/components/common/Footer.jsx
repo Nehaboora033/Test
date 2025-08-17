@@ -11,7 +11,9 @@ const Footer = () => {
       <div className='flex max-w-[970px] w-full md:flex-row flex-col md:gap-0 gap-[49px] mx-auto px-3 pb-[49px] justify-between'>
         {/* footer logo section */}
         <div className='md:max-w-[260px] w-full '>
-          <div className='flex min-[500px]:justify-start justify-center  '><img src={logo} alt="logo" className='mb-[14px] cursor-pointer' /></div>
+          <Link to={'/'} className='flex min-[500px]:justify-start justify-center  '>
+            <img src={logo} alt="logo" className='mb-[14px] cursor-pointer' />
+            </Link>
           <Description className={'text-[#D1D2D8] min-[500px]:text-start text-center mb-4'}>Zbudowane przez profesjonalistów, dla profesjonalistów</Description>
           <div className=''>
             <div className='flex gap-4 min-[500px]:justify-start justify-center'>

@@ -5,7 +5,7 @@ import Jakzac from '../components/Jakzac'
 
 const Jak = () => {
   return (
-    <div>
+    <div className='pt-[110px]'>
       <Jakzac />
     </div>
   )

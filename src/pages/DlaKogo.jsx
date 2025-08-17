@@ -4,7 +4,9 @@ import Dlaczegowarto from '../components/Dlaczegowarto'
 const DlaKogo = () => {
   return (
     <>
-      <Dlaczegowarto />
+      <div className='pt-[110px]'>
+        <Dlaczegowarto />
+      </div>
     </>
   )
 }

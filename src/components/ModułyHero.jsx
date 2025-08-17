@@ -5,7 +5,7 @@ import circles from '../assets/webp/circles.webp'
 
 const ModułyHero = () => {
   return (
-    <div className='max-w-[1390px] px-3 mx-auto'>
+    <div className='max-w-[1390px] px-3 mx-auto pt-[110px]'>
       <div className='max-w-[1366px] rounded-[30px]  px-4 pt-[77px] bglightpurple pb-[33px]  mb-[63px] relative'>
         <img src={dots} alt="dots" className='absolute right-[16px] top-[28px] min-[1120px]:block hidden' />
         {/* purple box */}
