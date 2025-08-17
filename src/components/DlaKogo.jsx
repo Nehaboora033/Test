@@ -19,7 +19,7 @@ const DlaKogo = () => {
   return (
     <div className='max-w-[1164px] w-full mx-auto px-3 mb-[140px]'>
       <div className='max-w-[1140px] '>
-        <SubHeading className='text-center mb-[44px]'>Dla kogo?</SubHeading>
+        <SubHeading className='text-center sm:mb-[44px] mb-[34px]'>Dla kogo?</SubHeading>
 
         <Tabs selectedIndex={tabIndex} onSelect={handleTabChange}>
           <div className='flex justify-center'>
@@ -40,11 +40,11 @@ const DlaKogo = () => {
           </div>
           {/* cards data */}
           <TabPanel>
-            <div className="grid min-[900px]:grid-cols-4 min-[730px]:grid-cols-3 min-[500px]:grid-cols-2  gap-4 ">
+            <div className="grid min-[900px]:grid-cols-4 min-[500px]:grid-cols-2  gap-4 ">
               {Dla_Data.map((item, index) => (
                 <div
                   key={index}
-                  className={`group max-w-[251px] card w-full sm:h-[258px] justify-center mx-auto rounded-[15px] flex flex-col items-center sm:p-[25px] cursor-pointer transition-all duration-300 ${Dla_Card_Shadow[index]}`}
+                  className={`group lg:max-w-[251px] card  w-full sm:h-[258px] justify-center mx-auto rounded-[15px] flex flex-col items-center sm:p-[25px] cursor-pointer transition-all duration-300 ${Dla_Card_Shadow[index]}`}
                 >
                   <div
                     className={`size-[74px] rounded-2xl mb-[24px] flex items-center justify-center transition-all duration-300 ${Dla_Box_Shadow[index]}`}
@@ -52,7 +52,7 @@ const DlaKogo = () => {
                   >
                     <item.svg />
                   </div>
-                  <div className="max-w-[190px] w-full">
+                  <div className="w-full">
                     <h4 className="font-bold text-lg text-center text-[#020403] mb-[11px] whitespace-nowrap">
                       {item.title}
                     </h4>

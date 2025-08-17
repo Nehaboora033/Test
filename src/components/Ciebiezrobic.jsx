@@ -6,9 +6,9 @@ import Description from './common/Description'
 const Ciebiezrobic = () => {
   return (
     <div className='max-w-[1164px] mx-auto px-3 sm:mb-[164px] mb-[120px] '>
-      <div className='max-w-[1140px] bglightpurple rounded-2xl sm:px-[26px] px-[17px] sm:py-[58px] py-[48px] border-[2px] border-[#F6F5F4] '>
-        <SubHeading className='text-center max-[375px]:text-[38px] mb-[40px]'>Co możemy dla Ciebie zrobić?</SubHeading>
-        <div className='grid sm:grid-cols-2 grid-cols-1 md:gap-[31px] gap-[20px]'>
+      <div className='max-w-[1140px] bglightpurple rounded-2xl sm:px-[26px] px-[17px] sm:py-[58px] py-[48px] border-[2px] border-[#F6F5F4] shadow-cie '>
+        <SubHeading className='text-center max-[375px]:text-[38px] sm:mb-[40px] mb-[47px]'>Co możemy dla Ciebie zrobić?</SubHeading>
+        <div className='grid sm:grid-cols-2 grid-cols-1 gap-x-[31px] gap-y-[40px] '>
           {Ciebie_Data.map((item, index) => (
             <div className='flex items-center flex-col sm:bg-white rounded-[15px] md:p-[22px] sm:p-4 ' key={index}>
               <div

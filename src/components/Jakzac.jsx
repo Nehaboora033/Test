@@ -8,7 +8,7 @@ import { Jak_Data } from '../utils/helper'
 
 const Jakzac = () => {
     return (
-        <div className='max-w-[1164px] mx-auto px-3 sm:pb-[111px]'>
+        <div className='max-w-[1164px] mx-auto px-3 sm:pb-[50px]'>
             <div className='max-w-[1140px] rounded-2xl shadowblack sm:py-[62px] sm:px-[60px] pt-[25px] pb-[50px] px-[40px] border-[2px]  border-[#F6F5F4]  h- [620px]'>
                 <SubHeading className='text-center mb-[18px]'>Jak Zacząć?</SubHeading>
                 <Description className={'text-[#4D4F4E] max-w-[450px] w-full text-center mx-auto mb-[40px] sm:mb-[69px]'}>Chcesz uprościć zarządzanie swoją nieruchomością? Wykonaj trzy proste kroki:</Description>
@@ -68,14 +68,21 @@ const Jakzac = () => {
 
                 {/* tiemline before lg */}
                 <div className='lg:hidden block'>
-                    <div className='grid  md:grid-cols-2 min-[910px]:flex  gap-6'>
+                    <div className='grid md:grid-cols-2 min-[910px]:flex gap-6'>
                         {Jak_Data.map((item, index) => (
-                            <div className='' key={index}>
+                            <div
+                                key={index}
+                                className={`${index === 2 ? 'md:col-span-2 flex justify-center items-center flex-col' : ''}`}
+                            >
                                 <div className='rounded-[50%] flex items-center justify-center mx-auto purple sm:size-[75px] size-[54px] mb-4'>
-                                    <item.svg className={'max-sm:size-[30px]'}/>
+                                    <item.svg className={'max-sm:size-[30px]'} />
                                 </div>
-                                <SubHeading className='sm:!text-[20px] !text-[16px] text-center mb-4'>{item.title} </SubHeading>
-                                <Description className={'text-center'}>{item.description} </Description>
+                                <SubHeading className='sm:!text-[20px] !text-[16px] text-center sm:mb-4 mb-[6px]'>
+                                    {item.title}
+                                </SubHeading>
+                                <Description className={'text-center'}>
+                                    {item.description}
+                                </Description>
                             </div>
                         ))}
                     </div>

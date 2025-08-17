@@ -35,13 +35,13 @@ const Hero = () => {
 
   return (
     <div className='max-w-[1390px] px-3 mx-auto  pt-[110px]'>
-      <div className='max-w-[1366px] rounded-[30px] px-2  sm:px-4 pt-[77px] bglightpurple pb-[20px] sm:mb-[279px] mb-[140px] relative'>
+      <div className='max-w-[1366px] rounded-[30px] px-[11px]  sm:px-4 pt-[77px] bglightpurple pb-[20px] sm:mb-[279px] mb-[140px] relative'>
         <img src={dots} alt="dots" className='absolute right-[16px] top-[28px] min-[1050px]:block hidden' />
         <div className='flex justify-center mb-[18px]'>
           <div className='border border-[#5E13F6] rounded-[30px] bg-[#E4D7FF] text-[#5E13F6] py-[11px] px-[16px] sm:text-[16px] text-[14px]'>Twój zespół cyfrowy dostępny 24/7.</div>
         </div>
         {/* typewriter useEffect */}
-        <Heading className="text-center lg:max-w-[850px] w-full mx-auto mb-[15px]">
+        <Heading className="text-center lg:max-w-[850px] w-full mx-auto sm:mb-[15px] mb-[9px]">
           Zautomatyzuj zarządzanie nieruchomościami{' '}
           <span className="min-[520px]:bg-[#E4D7FF] rounded-xl">
             {isAbove520 ? (
@@ -60,8 +60,8 @@ const Hero = () => {
           <div>nieruchomościami.</div>
           Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj działalność — bez zatrudniania dodatkowych pracowników.</Description>
         <div className='flex gap-[26px] justify-center mb-[53px] sm:flex-row flex-col items-center'>
-          <Button className=' py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Jesteśmy również na YouTube.</Button>
-          <Button className='py-[12.5px] px-[29px] shadowpurple whitespace-nowrap w-fit'>Zobacz Zoe w akcji</Button>
+          <Button className=' py-[12px] px-[29px] shadowpurple whitespace-nowrap w-fit border-0 h-[44px]'>Jesteśmy również na YouTube.</Button>
+          <Button className='py-[12px] px-[29px] shadowpurple whitespace-nowrap w-fit border-0 h-[44px]'>Zobacz Zoe w akcji</Button>
         </div>
         {/* swiper */}
         <Swiper
@@ -83,15 +83,15 @@ const Hero = () => {
               spaceBetween: 16,
             },
             520: {
-              slidesPerView: 2.3,
+              slidesPerView: 2,
               spaceBetween: 24,
             },
             768: {
-              slidesPerView: 3.3,
+              slidesPerView: 3,
               spaceBetween: 32,
             },
             1024: {
-              slidesPerView: 4.2,
+              slidesPerView: 4,
               spaceBetween: 38,
             },
             1280: {

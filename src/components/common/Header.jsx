@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <>
       <div className={`w-full fixed top-0 z-20 ${scrolled ? 'bg-white shadow-lg ' : 'bg-transparent'}`}>
-        <div className='max-w-[1164px] mx-auto px-3 pt-[20px] pb-[20px]'>
+        <div className='max-w-[1164px] mx-auto px-3 pt-[28px] pb-[20px]'>
           <div className='max-w-[1140px]'>
             <div className='flex items-center justify-between'>
               {/* Logo */}
@@ -66,7 +66,7 @@ const Header = () => {
                       <Description className={'text-[#1B1E3C]'}>Polski</Description>
                       <img src={flag} alt="img" className='cursor-pointer' />
                     </div>
-                    <Button className='py-[9px] px-[18px] text-white'>Zarejestruj</Button>
+                    <Button className='py-[9px] px-[18px] text-white border-0 '>Zarejestruj</Button>
                   </div>
                 </nav>
               </div>

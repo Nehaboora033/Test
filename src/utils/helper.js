@@ -268,7 +268,7 @@ export const Footer_Links = [
         link: [
             {
                 icon: Address,
-                text: 'ul. Nowy Świat 33/13, 00-029 Warszawa',
+                text: 'ul. Nowy Świat 33/13 00-029 Warszawa',
                 href: '',
             },
             {

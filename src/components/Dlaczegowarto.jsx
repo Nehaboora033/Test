@@ -20,8 +20,8 @@ const Dlaczegowarto = () => {
                   <item.svg />
                 </div>
                 <div>
-                  <SubHeading className='!text-[20px] text-[#000302] '>{item.title} </SubHeading>
-                  <Description className={'text-[#4D4F4E]'}>{item.description} </Description>
+                  <SubHeading className='!text-[20px] text-[#000302] mb-[6px] '>{item.title} </SubHeading>
+                  <Description className={'text-[#4D4F4E] lg:max-w-[488px] w-full'}>{item.description} </Description>
                 </div>
               </div>
             ))}

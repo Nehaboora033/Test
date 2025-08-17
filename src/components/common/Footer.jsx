@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   const currentYear = new Date();
   return (
-    <div className='darkblue pt-[169px] '>
-      <div className='flex max-w-[970px] w-full md:flex-row flex-col md:gap-0 gap-[49px] mx-auto px-3 pb-[49px] justify-between'>
+    <div className='darkblue sm:pt-[169px] pt-[141px] '>
+      <div className='flex max-w-[970px] w-full md:flex-row flex-col md:gap-0 gap-[49px] mx-auto px-3 sm:pb-[59px] pb-[78px] justify-between'>
         {/* footer logo section */}
         <div className='md:max-w-[260px] w-full '>
           <Link to={'/'} className='flex min-[500px]:justify-start justify-center  '>
-            <img src={logo} alt="logo" className='mb-[14px] cursor-pointer' />
+            <img src={logo} alt="logo" className='sm:mb-[14px] mb-[12px] cursor-pointer max-[500px]:h-[60px]' />
             </Link>
-          <Description className={'text-[#D1D2D8] min-[500px]:text-start text-center mb-4'}>Zbudowane przez profesjonalistów, dla profesjonalistów</Description>
+          <Description className={'text-[#D1D2D8] min-[500px]:text-start text-center sn:mb-4 mb-[22px]'}>Zbudowane przez profesjonalistów, dla profesjonalistów</Description>
           <div className=''>
             <div className='flex gap-4 min-[500px]:justify-start justify-center'>
               {Footer_Social_Links.map((item, index) => (
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='border-t border-white pt-[16px] pb-[13px] text-[]'>
+      <div className='sm:border-t border-white pt-[16px] pb-[13px] text-[]'>
         <Description className={'text-[#D1D2D8] text-center sm:text-[16px] text-[14px]'}>© {currentYear.getFullYear()} RentEasy.AI — All rights reserved.</Description>
       </div>
     </div>
