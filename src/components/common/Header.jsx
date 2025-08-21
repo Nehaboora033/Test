@@ -29,7 +29,7 @@ const Header = () => {
             <div className='flex items-center justify-between'>
               {/* Logo */}
               <Link to={'/'}>
-                <img src={logo} alt="logo" className='w-[183px] h-[54px] object-cover' />
+                <img src={logo} alt="logo" className='sm:w-[183px] sm:h-[54px] w-[139px] h-[41px] object-cover' />
               </Link>
               {/* Nav Links */}
               <div className='flex items-center gap-[32px]'>
@@ -71,27 +71,34 @@ const Header = () => {
                 </nav>
               </div>
               {/* Desktop Polish flag & button */}
-              <div className='flex gap-[15px]'>
-                <div className='flex gap-[15px] items-center max-[550px]:hidden'>
+              <div className='flex gap-[15px] items-center'>
+                <div className='flex gap-[15px] items-center max-[550px]:hidden '>
                   <div className='flex items-center gap-[15px]'>
                     <Description className={'text-[#1B1E3C]'}>Polski</Description>
                     <img src={flag} alt="img" className='cursor-pointer' />
                   </div>
-                  <Button className='py-[9px] px-[18px] text-white'>Zarejestruj</Button>
+                  <Button className='!py-[9px] !px-[18px] text-white h-[44px] w-[113px] '>Zarejestruj</Button>
                 </div>
                 {/* Hamburger Menu */}
-                <div className='z-[11] min-[1160px]:hidden'>
+                {/* <div className='z-[11] min-[1160px]:hidden'>
                   <button
-                    aria-label="Toggle navigation menu"
+                    aria-label="Toggle navigation menu "
                     className='z-[11] min-[1160px]:hidden'
                     onClick={() => setIsOpen(state === 'show' ? null : 'show')}
                   >
-                    <Hamburger
-                      toggled={state == 'show'}
-                      toggle={() => setIsOpen(state === 'show' ? null : 'show')}
-                    />
+                      <Hamburger
+                        toggled={state == 'show'}
+                        size={26}
+                        toggle={() => setIsOpen(state === 'show' ? null : 'show')}
+                      />
                   </button>
-                </div>
+                </div> */}
+                <button onClick={() => setIsOpen(state === "show" ? null : "show")}
+                  className='max-sm:w-[26.25px] max-sm:h-[17.5px] h-[25px] w-[35px] cursor-pointer  z-10 flex flex-col justify-between lg:hidden'>
+                  <span className={`h-[3px] w-full bg-black rounded-[50px] transition-all duration-200 ${state === "show" ? 'max-sm:rotate-[34deg] rotate-[40deg] origin-left' : ''}`}></span>
+                  <span className={`h-[3px] w-full bg-black rounded-[50px] transition-all duration-200 ${state === "show" ? 'hidden' : ''}`}></span>
+                  <span className={`h-[3px] w-full bg-black rounded-[50px] transition-all duration-200 ${state === "show" ? 'max-sm:rotate-[-33deg] rotate-[-41deg] origin-left' : ''}`}></span>
+                </button>
               </div>
             </div>
           </div>

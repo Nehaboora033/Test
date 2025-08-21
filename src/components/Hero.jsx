@@ -14,6 +14,7 @@ import Heading from './common/Heading';
 import { Typewriter } from "react-simple-typewriter";
 import swipercircle from '../assets/webp/swipercircle.webp'
 import logo from '../assets/svg/swiperLogo.svg'
+import { Link } from 'react-router-dom';
 
 const useMediaQuery = (query) => {
   const [matches, setMatches] = React.useState(false)
@@ -35,10 +36,10 @@ const Hero = () => {
 
   return (
     <div className='max-w-[1390px] px-3 mx-auto  pt-[110px]'>
-      <div className='max-w-[1366px] rounded-[30px] px-[11px]  sm:px-4 pt-[77px] bglightpurple pb-[20px] sm:mb-[279px] mb-[140px] relative'>
+      <div className='max-w-[1366px] sm:rounded-[30px] rounded-[14px] px-[11px]  sm:px-4 sm:pt-[77px] pt-[53px] bglightpurple sm:pb-[20px] pb-[35px] sm:mb-[260px] mb-[52px] relative'>
         <img src={dots} alt="dots" className='absolute right-[16px] top-[28px] min-[1050px]:block hidden' />
         <div className='flex justify-center mb-[18px]'>
-          <div className='border border-[#5E13F6] rounded-[30px] bg-[#E4D7FF] text-[#5E13F6] py-[11px] px-[16px] sm:text-[16px] text-[14px]'>Twój zespół cyfrowy dostępny 24/7.</div>
+          <div className='border border-[#5E13F6] rounded-[30px]  h-[41px] bg-[#E4D7FF] text-[#5E13F6] py-[11px] px-[16px] sm:text-[16px] text-[14px]'>Twój zespół cyfrowy dostępny 24/7.</div>
         </div>
         {/* typewriter useEffect */}
         <Heading className="text-center lg:max-w-[850px] w-full mx-auto sm:mb-[15px] mb-[9px]">
@@ -57,13 +58,17 @@ const Hero = () => {
           </span>
         </Heading>
         <Description className={'text-[#474963] text-center max-w-[807px] w-full mx-auto mb-[15.5px]'}>Pierwszy w Polsce system CRM oparty na   sztucznej inteligencji, stworzony specjalnie dla firm zarządzających
-          <div>nieruchomościami.</div>
+         <div>nieruchomościami.</div>
           Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj działalność — bez zatrudniania dodatkowych pracowników.</Description>
-        <div className='flex gap-[26px] justify-center mb-[53px] sm:flex-row flex-col items-center'>
-          <Button className=' py-[12px] px-[29px] shadowpurple whitespace-nowrap w-fit border-0 h-[44px]'>Jesteśmy również na YouTube.</Button>
+        <div className='flex gap-[26px] justify-center sm:flex-row flex-col items-center mb-[53px]'>
+          <Button className=' block max-sm:hidden py-[12px] px-[29px] shadowpurple whitespace-nowrap w-fit border-0 h-[44px]'>Jesteśmy również na YouTube.</Button>
           <Button className='py-[12px] px-[29px] shadowpurple whitespace-nowrap w-fit border-0 h-[44px]'>Zobacz Zoe w akcji</Button>
+
+          {/* link the shows on the max-sm */}
+          <Link className="font-semibold text-[16px] cursor-pointer text-[#1B1E3C] leading-[100%] underline underline-offset-[6px]  decoration-[#1B1E3C] sm:hidden  block">Zobacz Zoe w akcji</Link>
         </div>
         {/* swiper */}
+
         <Swiper
           slidesPerView={5}
           modules={[Navigation, Autoplay]}
@@ -72,10 +77,10 @@ const Hero = () => {
           pagination={{
             clickable: false,
           }}
-          a utoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           breakpoints={{
             320: {
@@ -99,12 +104,13 @@ const Hero = () => {
               spaceBetween: 44,
             },
           }}
+
         >
           {Heroswiper_Data.map((item, index) => (
             <SwiperSlide key={index} >
+
               <div
-                className={`card relative rounded-2xl cursor-pointer bg-white w-full overflow-hidden transition-all duration-300 ${activeIndex === index ? "h-[320px]" : "h-[261px]"
-                  }`}
+                className={`card  relative rounded-2xl  cursor-pointer  max-lg:mt-12  bg-white w-full overflow-hidden transition-all duration-300  ${activeIndex === index ? " border border-[#5E13F6]" : "h-[261px] shadowswiper"} `}
               >
                 {activeIndex === index && (
                   <img src={logo} alt="logo" className='mx-auto mt-4' />
@@ -124,15 +130,14 @@ const Hero = () => {
                   />
                 )}
                 {activeIndex === index ? (
-                  <Description className='py-[27px] px-[16px] !text-[20px] font-semibold text-center text-[#1B1E3C]'>
+                  <Description className='py-[27px] px-[16px] !text-[20px]  font-semibold text-center text-[#1B1E3C]'>
                     {item.activeDescription ?? "Co mogę dla Ciebie zrobić?"}
                   </Description>
                 ) : (
-                  <Description className='py-[27px] px-[16px] !text-[12px] text-center text-[#494B63]'>
+                  <Description className='py-[27px] px-[16px] mt-[12px] !text-[12px] text-center text-[#494B63]'>
                     {item.description}
                   </Description>
                 )}
-
                 {activeIndex !== index && (
                   <div className="purple flex items-center justify-center size-[54px] rounded-[50%] absolute top-[44%] left-1/2 -translate-x-1/2 z-10">
                     <item.svg />
@@ -142,6 +147,7 @@ const Hero = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
       </div>
     </div>
   )

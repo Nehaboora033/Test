@@ -25,7 +25,7 @@ const DlaKogo = () => {
           <div className='flex justify-center'>
             <TabList className="flex bg-white max-w-[452px] mb-[77px] w-full border border-[#5E13F6] rounded-full gap-1 justify-center items-center h-[73px]">
               <Tab
-                className="sm:py-[21.5px] sm:pl-[58.8px] w-full py-[25px] max-w-[226px] px-6 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-[#1B1E3C] text-[16px] cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                className="sm:py-[21.5px] sm:pl-[58.8px] w-full py-[25px] text-center max-w-[226px] px-6 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-[#1B1E3C] text-[16px] cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
                 selectedClassName="purple text-white shadow-sm shadowinner"
               >
                 Firm, Które...

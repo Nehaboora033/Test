@@ -16,6 +16,8 @@ body {
     --shadow-lightblack: 0px -3.01px 20.32px 0px #00000029;
     --shadow-inner: 4px 6px 4px 0px #00000040 inset;
     --shadow-cie: 0px -4px 27px 0px #5E13F612;
+    --shadow-swiper: 7px -5px 35.4px 0px #5E13F61A;
+
 
 
     /* common page purple */
@@ -94,6 +96,10 @@ body {
     box-shadow: var(--shadow-cie);
 }
 
+.shadowswiper {
+    box-shadow: var(--shadow-swiper);
+}
+
 /* color change of scrollbar  */
 
 ::-webkit-scrollbar {
@@ -109,3 +115,4 @@ body {
     background: var(--color-purple);
     border-radius: 8px;
 }
+

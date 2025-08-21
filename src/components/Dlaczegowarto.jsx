@@ -6,13 +6,13 @@ import Description from './common/Description'
 
 const Dlaczegowarto = () => {
   return (
-    <div className='max-w-[1164px] mx-auto px-3 sm:mb-[191px] mb-[120px]'>
+    <div className='max-w-[1164px] mx-auto px-3 sm:mb-[191px] mb-[22px]'>
       <div className='max-w-[1140px] '>
         <div className='flex justify-between lg:flex-row flex-col lg:gap-4 gap-[40px]'>
-          <div className='lg:max-w-[600px] w-full'>
+          <div className='lg:max-w-[600px] w-full sm:mt-[36px] sm:pl-[8px]'>
             <SubHeading className='mb-[37px] lg:text-start text-center'>Dlaczego warto skorzystać z RentEasy.AI?</SubHeading>
             {Warto_Data.map((item, index) => (
-              <div className='mb-[16px] flex item-center gap-[25px]' key={index}>
+              <div className='mb-[16px] flex item-center gap-[24px]' key={index}>
                 <div
                   className={'size-[64px] flex items-center justify-center rounded-2xl shrink-0 '}
                   style={{ backgroundColor: Warto_Box_Color[index] }}
@@ -20,8 +20,8 @@ const Dlaczegowarto = () => {
                   <item.svg />
                 </div>
                 <div>
-                  <SubHeading className='!text-[20px] text-[#000302] mb-[6px] '>{item.title} </SubHeading>
-                  <Description className={'text-[#4D4F4E] lg:max-w-[488px] w-full'}>{item.description} </Description>
+                  <SubHeading className='sm:!text-[20px] !text-[18px]  text-[#000302] mb-[6px]'>{item.title} </SubHeading>
+                  <Description className={'text-[#4D4F4E] sm:text-[16px] text-[14.6px] capitalize lg:max-w-[488px] w-full sm:max-w-[650px]'}>{item.description} </Description>
                 </div>
               </div>
             ))}

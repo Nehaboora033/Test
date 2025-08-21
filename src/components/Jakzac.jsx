@@ -16,31 +16,40 @@ const Jakzac = () => {
                     {/* timeline shown after lg */}
                     <div
                         className="timeline max-w-[1007px]  mx-auto">
+
+                        {/* first part */}
                         <div className="w-1/2  md:pr-[105px] relative left-0 m ax-md:left-[5%] mb-10">
                             <SubHeading
                                 className="!text-[20px] text-[#000302] md:text-right mb-[6px] ">
                                 Skonfiguruj Swój Pakiet
                             </SubHeading>
-                            <Description
-                                className="leading-[134%] capitalize text-[#4D4F4E] md:text-right ">
-                                Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.
-                            </Description>
+                            <div className='flex justify-end'>
+                                <Description
+                                    className="leading-[134%] max-w-[346px] capitalize text-[#4D4F4E] md:text-right ">
+                                    Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.
+                                </Description>
+                            </div>
+
+                            {/* circle */}
                             <div
                                 className="absolute size-[73px] rounded-full bg-[#5E13F6] flex items-center justify-center top-0 right-[6px] z-1 " >
                                 <img src={timeline1} alt="img" className='absolute top-[60%] -right-[90%] -z-1 min-[1120px]:block hidden ' />
                                 <Jaksvg1 />
                             </div>
                         </div>
+
+                        {/* second part */}
                         <div
-                            className="w-1/2  md:pl-[113px] relative left-[50%] m ax-md:left-[5%] mb-5">
+                            className="w-1/2  md:pl-[113px] relative left-[50%] m ax-md:left-[5%] mb-6 ">
                             <SubHeading
                                 className="!text-[20px] text-[#000302] mb-[6px] ">
                                 Uzyskaj Spersonalizowane Rekomendacje
                             </SubHeading>
                             <Description
-                                className="leading-[134%] capitalize text-[#4D4F4E] ">
+                                className="leading-[134%] max-w-[320px] capitalize text-[#4D4F4E] ">
                                 Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.
                             </Description>
+                            {/* circle */}
                             <div
                                 className="absolute size-[73px] rounded-full bg-[#5E13F6] flex items-center justify-center top-0 left-[6px]">
                                 <img src={timeline2} alt="img" className='absolute top-[60%] -left-[92%] -z-1 min-[1120px]:block hidden ' />
@@ -48,6 +57,7 @@ const Jakzac = () => {
                             </div>
                         </div>
                     </div>
+                    {/* third part */}
                     <div className="w-1/2  md:pr-[105px] relative left-0 m ax-md:left-[5%]">
                         <div className="">
                             <SubHeading
@@ -59,6 +69,7 @@ const Jakzac = () => {
                                 Załóż konto, lub umów się na bezpłatną konsultację z naszym zespołem.
                             </Description>
                         </div>
+                        {/* circle */}
                         <div
                             className="absolute size-[73px] rounded-full bg-[#5E13F6] flex items-center justify-center top-0 right-[6px] " >
                             <Jaksvg3 />
@@ -72,7 +83,7 @@ const Jakzac = () => {
                         {Jak_Data.map((item, index) => (
                             <div
                                 key={index}
-                                className={`${index === 2 ? 'md:col-span-2 flex justify-center items-center flex-col' : ''}`}
+                                className={`flex items-center flex-col  ${index === 2 ? 'md:col-span-2 flex justify-center items-center flex-col' : ''}`}
                             >
                                 <div className='rounded-[50%] flex items-center justify-center mx-auto purple sm:size-[75px] size-[54px] mb-4'>
                                     <item.svg className={'max-sm:size-[30px]'} />
@@ -80,7 +91,7 @@ const Jakzac = () => {
                                 <SubHeading className='sm:!text-[20px] !text-[16px] text-center sm:mb-4 mb-[6px]'>
                                     {item.title}
                                 </SubHeading>
-                                <Description className={'text-center'}>
+                                <Description className={'text-center max-w-[360px] '}>
                                     {item.description}
                                 </Description>
                             </div>
